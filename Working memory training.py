@@ -16,6 +16,7 @@ import random
 It only asks the n-back level as a paramenter.'''
 
 '''This will create the trials' block with six n-back repetitions'''
+
 #correct (c), incorrect (i) or miss (m)
 def block_creator(nback_level):
     
@@ -58,6 +59,31 @@ def block_creator(nback_level):
     
     return block
 
+def typed_resp():
+    returned_string = ''
+    typed_string = ''
+    subj_resp = 0
+    win.flip()
+    txt_instr.draw()
+    txt_legend.draw()
+    win.flip()
+    while subj_resp == 0:
+        for i in event.getKeys(keyList=['1','2','3','4','5','return']):
+            if i in ['return']:
+                returned_string = typed_string #the returned string
+                win.flip()
+                core.wait(0.5)
+                subj_resp = 1
+            else:
+                typed_string = i
+                txt_input.setText(typed_string)
+                txt_input.draw()
+                txt_instr.draw()
+                txt_legend.draw()
+                win.flip()
+    
+    return returned_string
+
 '''A function to create a graph depicting the participants progress untill the last session'''
 #def progress_graph()
 
@@ -76,25 +102,23 @@ date = data.getDateStr()
 file_name = id_participant+'_n-back_'+date+'.csv'
 data_headings = 'trial;n-level;Details'
 
-
-#Create the file to insert each trial data
-np.savetxt(
-    file_name,
-    ['trial;n-level;details'],
-    fmt = '%s',
-    delimiter = ';',
-    newline = '\n'
-    )
-
 win = visual.Window(
         fullscr = True,
         color=(1,1,1),
-        units = 'pix',
-        size = (800,600)
+        units = 'pix'
         )
 
-txt_menu = visual.TextStim(win = win, color=(-1,-1,-1))
+win.mouseVisible=False
+
+txt_menu = visual.TextStim(win = win, color=(-1,-1,-1), height=24)
 txt_session_t = visual.TextStim(win = win, pos=(0,-250),color = (-1,-1,-1))
+txt_instr = visual.TextStim(win, pos=(0,180), wrapWidth=1000,
+    text="In a scale from 1 to 5 how motivated to do the training are you feeling today? Please type a number",
+    height=24,color=(-1,-1,-1))
+txt_input = visual.TextStim(win, color=(-1,-1,-1), units='norm', pos=(0,-0.4), 
+    height=0.1)
+txt_legend = visual.TextStim(win, pos=(0,40),height=20, color=(-1,-1,-1),
+    text="1=>not at all\n2=>not so much\n3=> can't say\n4=>somehow motivated\n5=>really motivated")
 
 grid = visual.ImageStim(
     win=win, 
@@ -118,7 +142,23 @@ nback_level_file = open('nback_system','r')
 nback_level = int(nback_level_file.read())
 nback_level_file.close()
 nback_history = []   #this var will store each n-back level within the session to create a mean n-back level for each session in order to present it on a graph
+motivation = 0
 
+txt_instr.draw()
+txt_legend.draw()
+win.flip()
+
+motivation = typed_resp()
+
+#Create the file to insert each trial data
+np.savetxt(
+    file_name,
+    ['trial,n-level,details'],
+    fmt = '%s',
+    delimiter = ',',
+    newline = '\n',
+    header="Session motivation is %s" % motivation
+    )
 
 for session_trial in range(20):
     
@@ -128,7 +168,7 @@ for session_trial in range(20):
 
     block = block_creator(nback_level)
     
-    txt_menu.text= 'Please choose one of the following options by pressing the given key:\n\n        s => Start a new trial block\n    esc => Quit'
+    txt_menu.text= 'Please choose one of the following options by pressing the given key:\n\n        s => Start a new trial block\n    esc => Quit\n\n\n\nRemember that <space> bar indicates a match'
     txt_session_t.text = 'Block %s\nN-back level = %s' % ((session_trial+1), nback_level)
     
     while True:
@@ -179,13 +219,12 @@ for session_trial in range(20):
                 errors += 1
     
     #The following section updates the file
-    
     data_doc = open(file_name,'a')
     
     data_doc.write(str(session_trial+1))
-    data_doc.write(';')
+    data_doc.write(',')
     data_doc.write(str(nback_level))
-    data_doc.write(';')
+    data_doc.write(',')
     data_doc.write(str(responses))
     data_doc.write('\n')
     
