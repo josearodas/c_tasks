@@ -374,8 +374,8 @@ while True:
     
     out_score.append([np.mean(mean_RT)]+prov_correct+prov_error+prov_miss)
     
-    if np.mean(prov_correct) < 4: break
-    if np.mean(prov_error) > 3: break
+    if np.mean(prov_correct[1:]) < 4: break
+    if np.mean(prov_error) > 2: break
     
     
     nback_level += 1
