@@ -159,7 +159,7 @@ img_examples2 = [{'img':img_ex21a,'dur':55},{'img':img_ex21b,'dur':15},{'img':im
     {'img':img_ex27a,'dur':55},{'img':img_ex27b,'dur':15},{'img':img_ex28a,'dur':55},{'img':img_ex28b,'dur':15},
     {'img':img_ex29a,'dur':55},{'img':img_ex29b,'dur':15}]
 
-out_corr = []
+out_score = []
 clock = core.Clock()
 
 main_output = []
@@ -250,13 +250,13 @@ while pract_quit == 0:
                 win.flip()
                 core.wait(2)
     
-    txt_instr.text = 'Would you like to practice with two columns?\n\n    a--> yes\n    k-->no\n\n\nIf you feel the task is not clear yet, please do not hesitate to ask the researcher.'
+    txt_instr.text = 'Now we will practcice with two columns. The task is the same but you will have to remember the number of two separate columns. Remember to keep in mind just the number that was presented one position above of each column.\n\nPress the <space> bar to start.'
     txt_instr.pos=(0,0)
     txt_instr.draw()
     win.flip()
     
-    repeat_pract = event.waitKeys(keyList=['a','k'])
-    if 'k' in repeat_pract: break
+    repeat_pract = event.waitKeys(keyList=['space','escape'])
+    if 'escape' in repeat_pract: break
     
     del order
     
@@ -279,17 +279,17 @@ while pract_quit == 0:
                 txt_feedback.text = 'That was right! This digit appeared just above a few moments ago.'
                 txt_feedback.draw()
                 win.flip()
-                core.wait(3)
+                core.wait(2)
             elif order[-1] == order[-3] and key_pressed[-1][0] == 'z':
                 txt_feedback.text = 'You just missed a match.'
                 txt_feedback.draw()
                 win.flip()
-                core.wait(2)
+                core.wait(1)
             elif order[-1] != order[-3] and key_pressed[-1][0] == 'm':
                 txt_feedback.text = 'There was no match on that one'
                 txt_feedback.draw()
                 win.flip()
-                core.wait(2)
+                core.wait(1)
     pract_quit = 1
 
 del order
@@ -310,8 +310,10 @@ while True:
     
     prov_correct = [nback_level]
     prov_error = []
+    prov_miss = []
+    mean_RT = []
     
-    for i in range(5):
+    for i in range(10):
         block = block_creator(nback_level)
         
         order = ['empty']*nback_level
@@ -319,6 +321,7 @@ while True:
         
         corr_counter = 0
         err_counter = 0
+        miss_counter = 0
         
         for i in block:
             order.append(i['item'])
@@ -333,9 +336,11 @@ while True:
             if len(order) >= nback_level:    #1-> correct; 2-> miss; 3-> incorrect
                 if order[-1] == order[(nback_level+1)*-1] and key_pressed[-1][0] == 'm':
                     corr_counter += 1
+                    mean_RT.append(key_pressed[-1][1])
                     local_output.append([nback_level,1,key_pressed[-1][1]])
                 elif order[-1] == order[(nback_level+1)*-1] and key_pressed[-1][0] == 'z':
                     local_output.append([nback_level,2,key_pressed[-1][1]])
+                    miss_counter += 1
                 elif order[-1] != order[(nback_level+1)*-1] and key_pressed[-1][0] == 'm':
                     err_counter += 1
                     local_output.append([nback_level,3,key_pressed[-1][1]])
@@ -343,6 +348,8 @@ while True:
                     local_output.append([nback_level,0,key_pressed[-1][1]])
         
         prov_correct.append(corr_counter)
+        prov_error.append(err_counter)
+        prov_miss.append(miss_counter)
         
         #update file data
         data_doc = open(file_name, 'a')
@@ -365,15 +372,16 @@ while True:
         
         del order, local_output, block
     
-    out_corr.append(prov_correct)
+    out_score.append([np.mean(mean_RT)]+prov_correct+prov_error+prov_miss)
     
-    if np.mean(prov_correct) < 3: break
+    if np.mean(prov_correct) < 4: break
     if np.mean(prov_error) > 3: break
     
     
     nback_level += 1
 
-np.savetxt(file_name[:-4]+'_means.csv',out_corr, fmt='%i', delimiter=',',header='n-level,run1,run2,run3,run4,run5')
+np.savetxt(file_name[:-4]+'_scores.csv',out_score, fmt='%f', delimiter=',',
+    header='meancorr_RT,n-level,corr_rn1,corr_rn2,corr_rn3,corr_rn4,corr_rn5,corr_rn6,corr_rn7,corr_rn8,corr_rn9,corr_rn10,err_rn1,err_rn2,err_rn3,err_rn4,err_rn5,err_rn6,err_rn7,err_rn8,err_rn9,err_rn10,mss_rn1,mss_rn2,mss_rn3,mss_rn4,mss_rn5,mss_rn6,mss_rn7,mss_rn8,mss_rn9,mss_rn10')
 
 txt_instr.alignHoriz = 'center'
 txt_instr.text = "The task has concluded. Thanks for participating\n\nPlease press the <space bar> to exit."
