@@ -5,10 +5,11 @@
 Created on Mon Mar 19 15:45 2018
 @author: JARP
 
-In order to modify the number of trials and runs the conditions counter and the runs_trials must be changed:
+In order to modify the number of trials and runs the conditions counter and the runs_trials
+must be changed:
 The runs_trials include 36 runs with 9 runs for all conditions.
-Each condition will be presented 8 times (reflected in the 'rep_counter') except for UUUU and URUR which will be
-presented 11 and 14 times to increase the number of trials for UP4 and SW4.
+Each condition will be presented 8 times (reflected in the 'rep_counter') except for UUUU and
+URUR which will be presented 11 and 14 times to increase the number of trials for UP4 and SW4.
 """
 from __future__ import division
 
@@ -18,7 +19,7 @@ import numpy as np
 
 #If any of these values have to be changed the content some vars should also be changed (see above for a description)
 #these values can be decreased for testing purposes only but not increased more than the recommended value
-num_runs = 36       #must be set to 36
+num_runs = 32       #must be set to 36
 num_pract = 3      #must be set to 5
 
 
@@ -118,15 +119,15 @@ win.mouseVisible=False
 
 letters = ['Q','W','R','T','P','S','D','F','G','H','J','K','L','Z','X','C','B','N']
 
-#36 runs (two runs added to increase the number of trials for conditions UUUU, and URUR); each run will contain 
-runs_trials = [1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4]
+#32 runs (two runs added to increase the number of trials for conditions UUUU, and URUR); each run will contain 
+runs_trials = [1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4]
 
 #conditions with a counter to control the number of times each will appear
-conditions = [{'replace':[1,2,3],'asterisk':[0],'rep_counter':8,'condition':'RUUU'},{'replace':[2,3],'asterisk':[0,1],'rep_counter':8,'condition':'RRUU'},
-        {'replace':[3],'asterisk':[0,1,2],'rep_counter':8,'condition':'RRRU'},{'replace':[0,1,2],'asterisk':[3],'rep_counter':8,'condition':'UUUR'},
-        {'replace':[0,1],'asterisk':[2,3],'rep_counter':8,'condition':'UURR'},{'replace':[0],'asterisk':[1,2,3],'rep_counter':8,'condition':'URRR'},
-        {'replace':[1,3],'asterisk':[0,2],'rep_counter':8,'condition':'RURU'},{'replace':[0,2],'asterisk':[1,3],'rep_counter':11,'condition':'URUR'},
-        {'replace':[0,3],'asterisk':[1,2],'rep_counter':8,'condition':'URRU'},{'replace':[0,1,2,3],'asterisk':[],'rep_counter':14,'condition':'UUUU'}]
+conditions = [{'replace':[1,2,3],'asterisk':[0],'rep_counter':7,'condition':'RUUU'},{'replace':[2,3],'asterisk':[0,1],'rep_counter':7,'condition':'RRUU'},
+        {'replace':[3],'asterisk':[0,1,2],'rep_counter':7,'condition':'RRRU'},{'replace':[0,1,2],'asterisk':[3],'rep_counter':7,'condition':'UUUR'},
+        {'replace':[0,1],'asterisk':[2,3],'rep_counter':7,'condition':'UURR'},{'replace':[0],'asterisk':[1,2,3],'rep_counter':7,'condition':'URRR'},
+        {'replace':[1,3],'asterisk':[0,2],'rep_counter':7,'condition':'RURU'},{'replace':[0,2],'asterisk':[1,3],'rep_counter':10,'condition':'URUR'},
+        {'replace':[0,3],'asterisk':[1,2],'rep_counter':7,'condition':'URRU'},{'replace':[0,1,2,3],'asterisk':[],'rep_counter':14,'condition':'UUUU'}]
 
 #practice trials
 pract_runs = [1,2,3,3,4]
