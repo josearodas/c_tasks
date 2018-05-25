@@ -1,0 +1,2 @@
+targets_x,omissions_x,omissionsrate_x,notargets_x,commissions_x,commissionsrate_x,targets_ax,omissions_ax,omissionsrate_ax,notargets_ax,commissions_nox,commissions_noa,commissions_nxna,commissionsrate_nxna,meanRT_corrX,meanRT_corrAX,meanRT_commX,meanRT_commNoX,meanRT_commNoA
+120,1,0.00833333333333,345,4,0.173913043478,90,4,0.0444444444444,360,1,3,1,0.2,0.464621848739,0.396965116279,0.50775,0.342,0.527666666667

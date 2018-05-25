@@ -74,7 +74,7 @@ def block_creator(nback_level):
     #the following section inserts the position to each item
     
     n_items = 20+nback_level
-    n_rows = math.ceil(n_items/nback_level)
+    n_rows = int(math.ceil(n_items/nback_level))
     y_pos = 0.9     #items will always start at the same position at the top of the screen
     
     pool_index = 0      #this var will control the index of items in the block in order to alter their position coordinates
@@ -313,7 +313,7 @@ while True:
     prov_miss = []
     mean_RT = []
     
-    for i in range(10):
+    for i in range(8):
         block = block_creator(nback_level)
         
         order = ['empty']*nback_level

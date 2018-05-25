@@ -1,0 +1,9 @@
+p001
+Assessment started at 11:23:
+	-Backward digit span
+	-Pause because of problems
+	-Columns n-back (11:50)
+	-CPT
+	-ast-box (12:27)
+Finish at 12:53
+Total time: 1:10

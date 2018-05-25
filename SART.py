@@ -18,8 +18,8 @@ import numpy
 import pprint
 
 
-num_trials = 2          #must be 25
-num_practrial = 1       #3 is ok
+num_trials = 25          #must be 25
+num_practrial = 3       #3 is ok
 
 
 my_dlg = gui.Dlg(title = 'Assessment')

@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+4#!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
 Created on Fri Feb 23 16:17 2018
@@ -193,7 +193,7 @@ while level <= 9:
     
     del digits
 
-print local_output
+#print local_output
 
 np.savetxt(
     file_name,
