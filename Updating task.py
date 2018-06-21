@@ -166,11 +166,11 @@ for i_trials in pract_trials:
         running_string.append(s_stimulus)
         
         clock.reset()
-        while clock.getTime() < 2:
+        while clock.getTime() < 1.5:
             p_stimulus.draw()
             win.flip()
         
-        while clock.getTime() < 2.5:
+        while clock.getTime() < 2:
             win.flip()
         
         running_list.remove(s_stimulus)
@@ -254,11 +254,11 @@ for i_trials in trials:
         running_string.append(s_stimulus)
         
         clock.reset()
-        while clock.getTime() < 2:
+        while clock.getTime() < 1.5:
             p_stimulus.draw()
             win.flip()
         
-        while clock.getTime() < 2.5:
+        while clock.getTime() < 2:
             win.flip()
         #Removing the letter from the pool so that it does not appear again in the same trial
         running_list.remove(s_stimulus)

@@ -28,7 +28,7 @@ numb_runsx = 15 #must be 15
 numb_runsax = 15 # must be 15
 numb_practx = 2 # must be 2
 numb_practax = 2 # must be 2
-rest_period = 90   #this is between the two formats of the task; is in sec; should be 90
+rest_period = 60   #this is between the two formats of the task; is in sec; should be 60
 
 
 
@@ -200,7 +200,7 @@ for i in range(numb_runsx): #10 for a short version and 20 for a long one; I'll 
             win.flip()
         
 event.clearEvents()
-txt_instr.text = "You have concluded the first part of the task. Please give yourself a two minutes break in order to start the second part. After two minutes the new instructions will appear automatically."
+txt_instr.text = "You have concluded the first part of the task. Please give yourself a one minute break in order to start the second part. After this the new instructions will appear automatically."
 txt_instr.draw()
 win.flip()
 

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy2 Experiment Builder (v1.90.1),
-    on May 04, 2018, at 14:22
+    on June 18, 2018, at 12:23
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -40,7 +40,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['Participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath=u'C:\\Users\\A&M_Lab1\\Documents\\Psychopy Tasks\\Final versions\\Stroop.psyexp',
+    originPath=u'C:\\Users\\A&M_Lab1\\Desktop\\c_tasks\\Stroop.psyexp',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -206,7 +206,7 @@ for thisComponent in instrpractComponents:
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-practice = data.TrialHandler(nReps=1, method='random', 
+practice = data.TrialHandler(nReps=2, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('pract_conditions.xlsx'),
     seed=None, name='practice')
@@ -383,7 +383,7 @@ for thisPractice in practice:
     
     thisExp.nextEntry()
     
-# completed 1 repeats of 'practice'
+# completed 2 repeats of 'practice'
 
 # get names of stimulus parameters
 if practice.trialList in ([], [None], None):

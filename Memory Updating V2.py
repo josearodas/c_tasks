@@ -232,7 +232,7 @@ correct2 = 0
 correct4 = 0
 correct6 = 0
 
-txt_instr.text = "In the following task you will be presented with two rows of boxes. The number of boxes per row can vary from 1 to 3. Each box will contain a number inside between 1 and 9 and you will be required to remember them, as they will be updated with basic additions and substractions. After a few of these operations you will be asked to type in the final number of each of these boxes. The results will always be numbers between 1 and 9, so you don't have to worry about complex arithmetics. First, you'll do some practice trials so you know how the task works.\n\nPress the <space> bar to start."
+txt_instr.text = "In the following task you will be presented with two rows of boxes. The number of boxes per row can be either 1 or 2. Each box will contain a number inside between 1 and 9 and you will be required to remember them, as they will be updated with basic additions and substractions. After a few of these operations you will be asked to type in the final number of each of these boxes. Each box is completely independent from the other boxes, so the additions and substractions only affects each particular box. The results will always be numbers between 1 and 9, so you don't have to worry about complex arithmetics. First, you'll do some practice trials so you know how the task works.\n\nPress the <space> bar to start."
 txt_instr.draw()
 win.flip()
 

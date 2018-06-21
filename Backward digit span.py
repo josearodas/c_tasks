@@ -1,4 +1,4 @@
-4#!/usr/bin/env python2
+#!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
 Created on Fri Feb 23 16:17 2018
@@ -11,7 +11,9 @@ file legend:
     first number is the number of digits
     second digit can be either 1(correct) or 0 (incorrect)
 """
+
 from __future__ import division
+
 from psychopy import visual, core, event, gui, data
 import numpy as np
 import random
@@ -76,7 +78,7 @@ txt_stim = visual.TextStim(win,color = [1,1,1],height = 68)
 level = 2
 local_output = []
 
-txt_instr.text = 'A series of numbers will be presented on the screen one by one. After the presentation of the numbers you will have to recall them in reversed order and type your answer with the keyboard.\n\nFor example, if the numbers 9-1-2 have been presented you will have to recall 2-1-9.\n\nThe amount of numbers that you will have to recall will increase as you progress in the task.\n\nYou will have two trials to practice before starting the actual task.\n\nPress the <space> bar to begin the practice trials.'
+txt_instr.text = 'A series of numbers will be presented on the screen one by one. After the presentation of the numbers you will have to recall them in reversed order and type your answer with the keyboard one number at a time.\n\nFor example, if the numbers 9-1-2 have been presented you will have to type 2 (hit enter), 1 (hit enter), and 9 (hit enter).\n\nThe amount of numbers that you will have to recall will increase as you progress in the task.\n\nYou will have two trials to practice before starting the actual task.\n\nPress the <space> bar to begin the practice trials.'
 txt_instr.draw()
 win.flip()
 
@@ -109,9 +111,9 @@ for rep in range(2):
     
     for i in range(level):
         if i == 0:
-            txt_topinstr.text = "Please type the last digit presented and press <enter>"
+            txt_topinstr.text = "Please type ONLY the last digit presented and press <enter>"
         else:
-            txt_topinstr.text = "Please type the first digit presented and press <enter>"
+            txt_topinstr.text = "Please type ONLY the first digit presented and press <enter>"
         prereturned_string.append(type_input())
     
     returned_string = ''.join(prereturned_string)
