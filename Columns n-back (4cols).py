@@ -44,8 +44,7 @@ def block_creator(nback_level):
     
     for i in range(block_len - nback_level): #this section eliminate any unplanned n-back repetition
         prov_pool = [{'item':'1','x':0,'y':0},{'item':'2','x':0,'y':0},{'item':'3','x':0,'y':0},
-        {'item':'4','x':0,'y':0},{'item':'5','x':0,'y':0},{'item':'6','x':0,'y':0},{'item':'7','x':0,'y':0},
-        {'item':'8','x':0,'y':0},{'item':'9','x':0,'y':0}]
+        {'item':'4','x':0,'y':0},{'item':'5','x':0,'y':0}]
         if block[i] == block[i+nback_level]:
             prov_pool.remove(block[i]) #the pool without the current position
             del block[i] #the block without the unwanted trial
@@ -213,8 +212,7 @@ win.flip()
 
 
 stim_pool = [{'item':'1','x':0,'y':0},{'item':'2','x':0,'y':0},{'item':'3','x':0,'y':0},
-            {'item':'4','x':0,'y':0},{'item':'5','x':0,'y':0},{'item':'6','x':0,'y':0},{'item':'7','x':0,'y':0},
-            {'item':'8','x':0,'y':0},{'item':'9','x':0,'y':0}]
+            {'item':'4','x':0,'y':0},{'item':'5','x':0,'y':0}]
 
 pract_quit = 0
 
@@ -294,7 +292,7 @@ while pract_quit == 0:
 
 del order
 
-txt_instr.text = 'On the practice trials you did before only one or two columns were presented, but bear in mind that the trials will start with just one column and progress with even more than two.\n\nPress the <space> bar in order to start the task. Try to be fast when responding. From now on there will not be any feedback.\n\nIf you feel tired during the task you will be able to have some rests between the blocks of trials.'
+txt_instr.text = 'On the practice trials you did before only one or two columns were presented, but bear in mind that the trials will start with just one column and progress with even more than two.\n\nPress the <space> bar in order to start the task. It is important that you try to be fast when responding, although accuracy is also important. From now on there will not be any feedback.\n\nIf you feel tired during the task you will be able to have some rests between the blocks of trials.'
 txt_instr.draw()
 win.flip()
 
@@ -305,13 +303,13 @@ nback_level = 1
 #Main program
 while nback_level <= 4:
     stim_pool = [{'item':'1','x':0,'y':0},{'item':'2','x':0,'y':0},{'item':'3','x':0,'y':0},
-            {'item':'4','x':0,'y':0},{'item':'5','x':0,'y':0},{'item':'6','x':0,'y':0},{'item':'7','x':0,'y':0},
-            {'item':'8','x':0,'y':0},{'item':'9','x':0,'y':0}]
+            {'item':'4','x':0,'y':0},{'item':'5','x':0,'y':0}]
     
-    prov_correct = [nback_level]
+    prov_correct = []
     prov_error = []
     prov_miss = []
     mean_RT = []
+    prov_allerrors = 0
     
     for i in range(10):
         block = block_creator(nback_level)
@@ -350,7 +348,8 @@ while nback_level <= 4:
         prov_correct.append(corr_counter)
         prov_error.append(err_counter)
         prov_miss.append(miss_counter)
-        
+        prov_allerrors += err_counter+miss_counter
+
         #update file data
         data_doc = open(file_name, 'a')
         
@@ -372,12 +371,12 @@ while nback_level <= 4:
         
         del order, local_output, block
     
-    out_score.append([np.mean(mean_RT)]+prov_correct+prov_error+prov_miss)
+    out_score.append([nback_level]+[np.mean(mean_RT)]+[prov_allerrors]+prov_correct+prov_error+prov_miss)
     
     nback_level += 1
 
 np.savetxt(file_name[:-4]+'_scores.csv',out_score, fmt='%f', delimiter=',',
-    header='meancorr_RT,n-level,corr_rn1,corr_rn2,corr_rn3,corr_rn4,corr_rn5,corr_rn6,corr_rn7,corr_rn8,corr_rn9,corr_rn10,err_rn1,err_rn2,err_rn3,err_rn4,err_rn5,err_rn6,err_rn7,err_rn8,err_rn9,err_rn10,mss_rn1,mss_rn2,mss_rn3,mss_rn4,mss_rn5,mss_rn6,mss_rn7,mss_rn8,mss_rn9,,mss_rn10')
+    header='n-level,meancorr_RT,errors,corr_rn1,corr_rn2,corr_rn3,corr_rn4,corr_rn5,corr_rn6,corr_rn7,corr_rn8,corr_rn9,corr_rn10,err_rn1,err_rn2,err_rn3,err_rn4,err_rn5,err_rn6,err_rn7,err_rn8,err_rn9,err_rn10,mss_rn1,mss_rn2,mss_rn3,mss_rn4,mss_rn5,mss_rn6,mss_rn7,mss_rn8,mss_rn9,mss_rn10')
 
 txt_instr.alignHoriz = 'center'
 txt_instr.text = "The task has concluded. Thanks for participating\n\nPlease press the <space bar> to exit."
