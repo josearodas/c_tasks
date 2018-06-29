@@ -18,6 +18,7 @@ from psychopy import visual, event, core, gui, data
 
 numb_trials = 4         #must be set to 4 (wich really are 16). Each trials (group of trials) implies one run for each length (5,7,9,11)
 numb_practrials = 1     #MUST be three, unless instructions are changed
+stim_pres = 1
 
 
 def typed_resp():
@@ -49,8 +50,10 @@ def typed_resp():
                 participant_input.draw()
                 input_instructions.draw()
                 win.flip()
-    
-    return returned_string
+    #if len(returned_string) > 4:
+    #    returned_string = returned_string[-4:]
+
+    return returned_string[-4:]
 
 
 #IMPUT DATA AND FILENAME
@@ -66,7 +69,7 @@ date = data.getDateStr()
 id_participant = str(my_dlg.data[0])
 id_session = str(my_dlg.data[1])
 
-file_name = id_participant+'_updating_'+date+'_'+id_session+'.csv'
+file_name = id_participant+'_updating_'+date+'_'+id_session
 
 #Creating a string with date & time info
 i = datetime.datetime.now()
@@ -117,7 +120,7 @@ trials = data.TrialHandler(
 trials.data.addDataType('CorrAns')
 
 
-txt_instructions.text = "In the following task a string of letters will be presented at the center of the screen one by one. You won't know how many letters each string will contain, but you will always have to remember the last four. This means that as the string progresses you will have to remember new letters and forget the old ones (e.g. 5fth letter). Let's say that the following letters are presented one by one on the screen:\n\nR - T - K - C - P - S\n\nAfter the letter 'S' the string suddenly stops (no more letters appear). Instead, a message will be displayed asking you to type the last four letters presented. You should have to type KCPS (without spaces of hyphens) and press <enter>.\n\nWe'll have a few practice trials so you can have a look at the task before really starting.\n\nPlease press the <space> bar to start the practice."
+txt_instructions.text = "In the following task a string of letters will be presented at the center of the screen one by one. You won't know how many letters each string will contain, but you will always have to remember the last four. This means that as the string progresses you will have to remember new letters and forget the old ones (e.g. 5fth letter). Let's say that the following letters are presented one by one on the screen:\n\nR - T - K - C - P - S\n\nAfter the letter 'S' the string suddenly stops (no more letters appear). Instead, a message will be displayed asking you to type the last four letters presented. You should have to type KCPS (without spaces of hyphens) and press <enter>. If you do not remember all the last four letter you can enter the ones that you remember, but take in mind that order matters. You can not alter the order of the letters as it will be considered an error.\n\nWe'll have a few practice trials so you can have a look at the task before really starting.\n\nPlease press the <space> bar to start the practice."
 txt_instructions.draw()
 win.flip()
 event.waitKeys(keyList=['space'])
@@ -166,11 +169,11 @@ for i_trials in pract_trials:
         running_string.append(s_stimulus)
         
         clock.reset()
-        while clock.getTime() < 1.5:
+        while clock.getTime() < stim_pres:
             p_stimulus.draw()
             win.flip()
         
-        while clock.getTime() < 2:
+        while clock.getTime() < (stim_pres+0.5):
             win.flip()
         
         running_list.remove(s_stimulus)
@@ -218,7 +221,7 @@ for i_trials in pract_trials:
     event.clearEvents()
 
 
-txt_instructions.text = "You have concluded the practice trials so you will beggin the task. This is not an easy task, but try to do your best. Press the <space> bar to continue."
+txt_instructions.text = "You have concluded the practice trials so you will begin the task. This is not an easy task, but try to do your best. Press the <space> bar to continue."
 txt_instructions.draw()
 win.flip()
 event.waitKeys(keyList=['space'])
@@ -254,11 +257,11 @@ for i_trials in trials:
         running_string.append(s_stimulus)
         
         clock.reset()
-        while clock.getTime() < 1.5:
+        while clock.getTime() < stim_pres:
             p_stimulus.draw()
             win.flip()
         
-        while clock.getTime() < 2:
+        while clock.getTime() < (stim_pres+0.5):
             win.flip()
         #Removing the letter from the pool so that it does not appear again in the same trial
         running_list.remove(s_stimulus)
