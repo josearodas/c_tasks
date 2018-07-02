@@ -7,6 +7,10 @@ Started on Thu Nov 23
 
 Based on certain descriptions from Hilbert (2015)
 
+The task does not appear to be working as expected. It is not too complicate to come
+with a strategy that dispense the need of manipulating the digits in the WM in order
+to reverse their order.
+
 file legend:
     first number is the number of digits
     second digit can be either 1(correct) or 0 (incorrect)
