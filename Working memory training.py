@@ -103,12 +103,12 @@ file_name = id_participant+'_n-back_'+date+'.csv'
 data_headings = 'trial;n-level;Details'
 
 win = visual.Window(
-        fullscr = True,
+        fullscr = False,
         color=(1,1,1),
         units = 'pix'
         )
 
-win.mouseVisible=False
+#win.mouseVisible=False
 
 txt_menu = visual.TextStim(win = win, color=(-1,-1,-1), height=24)
 txt_session_t = visual.TextStim(win = win, pos=(0,-250),color = (-1,-1,-1))
@@ -137,11 +137,11 @@ stim_pool = [{'area':'a1','x':-150,'y':150},{'area':'a2','x':0,'y':150},
     {'area':'a3','x':150,'y':150},{'area':'b1','x':-150,'y':0},{'area':'b3','x':150,'y':0},
     {'area':'c1','x':-150,'y':-150},{'area':'c2','x':0,'y':-150},{'area':'c3','x':150,'y':-150}]
 
-nback_level_file = open('nback_system','r')
+with open('nback_system') as nback_level_file:
+    #print (nback_level_file.readlines()[-1])[3]
+    nback_level = int((nback_level_file.readlines()[-1])[6])
 
-nback_level = int(nback_level_file.read())
-nback_level_file.close()
-nback_history = []   #this var will store each n-back level within the session to create a mean n-back level for each session in order to present it on a graph
+#nback_history = []   #this var will store each n-back level within the session to create a mean n-back level for each session in order to present it on a graph
 motivation = 0
 
 txt_instr.draw()
@@ -153,11 +153,10 @@ motivation = typed_resp()
 #Create the file to insert each trial data
 np.savetxt(
     file_name,
-    ['trial,n-level,details'],
+    ['session,motivation,day_session,n-level,details'],
     fmt = '%s',
     delimiter = ',',
     newline = '\n',
-    header="Session motivation is %s" % motivation
     )
 
 for session_trial in range(20):
@@ -184,7 +183,7 @@ for session_trial in range(20):
     
     grid.draw()
     win.flip()
-    nback_history.append(nback_level)
+    #nback_history.append(nback_level)
     core.wait(2)
     
     #this is the core of the program. It presents the trials and collects responses
@@ -219,16 +218,30 @@ for session_trial in range(20):
                 errors += 1
     
     #The following section updates the file
-    data_doc = open(file_name,'a')
     
-    data_doc.write(str(session_trial+1))
-    data_doc.write(',')
-    data_doc.write(str(nback_level))
-    data_doc.write(',')
-    data_doc.write(str(responses))
-    data_doc.write('\n')
+    with open('nback_system') as nbackfile:
+        session_numb = int(nbackfile.readlines()[-1][0])
     
-    data_doc.close()
+    with open(file_name,'a') as sendfile:
+        sendfile.write(str(session_numb+1))
+        sendfile.write(',')
+        sendfile.write(str(motivation))
+        sendfile.write(',')
+        sendfile.write(str(nsession_trial+1))
+        sendfile.write(',')
+        sendfile.write(str(nback_level))
+        sendfile.write(',')
+        sendfile.write(str(responses))
+
+    
+    with open('nback_system','a') as nbackfile:
+        nbackfile.write(str(session_numb+1))
+        nbackfile.write(',')
+        nbackfile.write(str(nsession_trial+1))
+        nbackfile.write(',')
+        nbackfile.write(str(nback_level))
+        nbackfile.write(',')
+        nbackfile.write(str(responses))
     
     #adjust the n-back level
     if errors > 5:
