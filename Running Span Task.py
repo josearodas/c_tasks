@@ -164,7 +164,7 @@ win.mouseVisible=False
 
 txt_stim = visual.TextStim(win, height = 45)
 txt_instr = visual.TextStim(win, height=28,wrapWidth=900)
-txt_topinstr = visual.TextStim(win, text = 'Please type the digits that you remember without spaces or hyphens. Use <b> as place holder. You can delete by using the <backspace> key.', pos=(0,150),
+txt_topinstr = visual.TextStim(win, text = 'Please type the digits that you remember without spaces or hyphens. You can delete by using the <backspace> key.', pos=(0,150),
     height=28,wrapWidth=900)
 
 score_12 = []
@@ -174,13 +174,13 @@ score_18 = []
 score_20 = []
 score_global = []
 
-txt_instr.text = "In the following task you will hear groups of digits recited very fast. After this you will be asked to recall all the last digits of the group that you can remember. You will be asked to type them in the correct order. If you cannot remember a particular item you will be able to use the <b> key as a placeholder.\n\nLet's say for example that you hear:\n\n       3-8-2-6-4-3-9-8-1-6-8-3-6-2\n\nbut you can only remember the last 5 digits. In this case when you are asked to type the digits you can remember you would type\n\n68362\n\nNotice that these digits were the last ones to be recited and are in the correct order. This is important.\n\nLet's have another example before having some practice. Please press the <space> bar."
+txt_instr.text = "In the following task you will hear groups of digits recited very fast. After this you will be asked to recall all the last digits of the group that you can remember. You will be asked to type them in the correct order. If you cannot remember a particular item do not just skip it as it will change the possition of the letter instead, try to make a guess.\n\nLet's say for example that you hear:\n\n       3-8-2-6-4-3-9-8-1-6-8-3-6-2\n\nbut you can only remember the last 5 digits. In this case when you are asked to type the digits you can remember you would type\n\n68362\n\nNotice that these digits were the last ones to be recited and are in the correct order. This is important.\n\nLet's have another example before having some practice. Please press the <space> bar."
 txt_instr.draw()
 win.flip()
 event.waitKeys(keyList = ['space'])
 win.flip()
 
-txt_instr.text = "Let's say that you hear the numbers:\n\n         8-2-6-4-1-7-5-3-9-7-4-5\n\nand you can only remember the last 6, but you are not sure about the forth one. In this case you would give as an answer:\n\n      539b45\n\nNotice that in this case the letter <b> has been used as a placeholder for a digit you didn't remember. This is perfectly valid.\n\nYou will have a few practice trials so you can try for yourself how this works. If you feel the task is not sufficiently clear yet please do not hesitate to ask the researcher any doubt you have.\n\nPlease press the <space-bar> key to continue."
+txt_instr.text = "Let's say that you hear the numbers:\n\n         8-2-6-4-1-7-5-3-9-7-4-5\n\nand you can only remember the last 6, but you are not sure about the forth one. In this case you would give as an answer:\n\n      539245\n\nNotice that in this case a guess was made for the digit you didn't remember and it was not just skiped. This is perfectly valid. If on the other hand you would just have skiped it by typing 53945 you would have only scored 2, as the previous items are not on their correct possition.\n\nYou will have a few practice trials so you can try for yourself how this works. If you feel the task is not sufficiently clear yet please do not hesitate to ask the researcher any doubt you have.\n\nPlease press the <space-bar> key to continue."
 txt_instr.draw()
 win.flip()
 event.waitKeys(keyList = ['space'])
@@ -211,7 +211,7 @@ for pracTrial in prac_trials:
     event.clearEvents()
     while subj_resp == 0:
         for i in event.getKeys(keyList=['backspace','return','escape',
-        '1','2','3','4','5','6','7','8','9','b']):
+        '1','2','3','4','5','6','7','8','9']):
             if i in ['escape']:
                 core.quit()
             elif i in ['return']:
@@ -237,6 +237,8 @@ for pracTrial in prac_trials:
     score_counter = 0
     
     digit_index = -1
+    if len(returned_string) > len(pracTrial['dig']): returned_string = returned_string[0:len(pracTrial['dig'])]
+    
     for i in range(len(returned_string)):
         if returned_string[digit_index] == pracTrial['dig'][digit_index]:
             score_counter += 1
@@ -253,6 +255,7 @@ for pracTrial in prac_trials:
     win.flip()
     
     core.wait(1)
+
 
 txt_instr.text = "Now that you have practiced let's start the task.\n\nPlease press the <space-bar> whenever you feel ready to start.\nFeel free to take small rests between the trials if you feel you need them."
 txt_instr.draw()
@@ -318,6 +321,11 @@ for thisTrial in trials:
     score_counter = 0
     
     digit_index = -1
+    
+    #this if will avoid an error if more digits are entered than the ones provided on the stim
+    if len(returned_string) > len(thisTrial['dig']): 
+        returned_string = returned_string[0:len(thisTrial['dig'])]
+    
     for i in range(len(returned_string)):
         if returned_string[digit_index] == thisTrial['dig'][digit_index]:
             score_counter += 1

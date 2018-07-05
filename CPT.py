@@ -24,25 +24,25 @@ import random
 import numpy as np
 
 
-numb_runsx = 15 #must be 15
-numb_runsax = 15 # must be 15
-numb_practx = 2 # must be 2
-numb_practax = 2 # must be 2
-rest_period = 90   #this is between the two formats of the task; is in sec; should be 90
+numb_runsx = 17 #must be 15
+numb_runsax = 16 # must be 15
+numb_practx = 1 # must be 2
+numb_practax = 1 # must be 2
+rest_period = 45   #this is between the two formats of the task; is in sec; should be 60
 
 
 
 
-def run_creatorX():
+def run_creatorX(): #create the x run (string of letters with X targets)
     letter_pool = ['Q','W','E','R','T','Y','U','I','O','P','A','S','D','F','G','H','J','K','L','Z','C','V','B','N','M']
     run = []
     
     for i in range(23):
-        run.append(random.choice(letter_pool))
+        run.append(random.choice(letter_pool)) #create a basic no-target string
     
     counter = 0
-    while counter < 8:
-        rand_indx = random.randint(1,(len(run)-2))
+    while counter < 8: #insert eight targets in the no-target string (string length=31)
+        rand_indx = random.randint(1,(len(run)-2)) #select random positions in the no-target string
         
         if ('X' is run[rand_indx] or 'X' is run[rand_indx+1] or 'X' is run[rand_indx-1]):
             continue
@@ -54,7 +54,7 @@ def run_creatorX():
     return run
 
 def run_creatorAX():
-    letter_pool = ['Q','W','E','R','T','Y','U','I','O','P','S','D','F','G','H','J','K','L','Z','C','V','B','N','M','A','A','A','X','X','X'] #in here the X is included as not target as well
+    letter_pool = ['Q','W','E','R','T','Y','U','I','O','P','S','D','F','G','H','J','K','L','Z','C','V','B','N','M','A','A','X','X'] #in here the X is included as no-target as well
     run = []
     indx_lst = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
     
@@ -96,7 +96,7 @@ file_name = id_participant+'_CPT_'+date+'_'+session+'.csv'
 
 win = visual.Window(units='pix',color=(-1,-1,-1), fullscr= True)
 win.mouseVisible = False
-txt_stim = visual.TextStim(win,color=(1,1,1),height=44)
+txt_stim = visual.TextStim(win,color=(1,1,1),height=84)
 txt_instr = visual.TextStim(win,color=(1,1,1),height=28,wrapWidth=900)
 clk_rt = core.Clock()
 clk_stim = core.Clock()
@@ -137,7 +137,7 @@ for i in range(numb_practx):
         
         event.clearEvents()
         
-        while clk_stim.getTime() < 0.690:
+        while clk_stim.getTime() < 0.550:
             txt_stim.draw()
             win.flip()
         
@@ -154,7 +154,7 @@ for i in range(numb_practx):
             win.flip()
             core.wait(1)
         
-        while clk_stim.getTime() < 0.92:
+        while clk_stim.getTime() < 0.78:
             win.flip()
 
 txt_instr.text = "Now that you have practiced a bit the real trials will begin. Remember to be accurate and not to miss any 'X'.\n\nPress any key to continue."
@@ -176,11 +176,11 @@ for i in range(numb_runsx): #10 for a short version and 20 for a long one; I'll 
         
         event.clearEvents()
         
-        while clk_stim.getTime() < 0.1:
+        while clk_stim.getTime() < 0.1: #this prevent to record delayed answers (from previous trial)
             txt_stim.draw()
             win.flip()
         event.clearEvents()
-        while clk_stim.getTime() < 0.690:
+        while clk_stim.getTime() < 0.550:
             txt_stim.draw()
             win.flip()
         
@@ -196,11 +196,11 @@ for i in range(numb_runsx): #10 for a short version and 20 for a long one; I'll 
             commissions_x += 1
             commissionsls_x.append(round(key_pressed[-1][1],3))
         
-        while clk_stim.getTime() < 0.92:
+        while clk_stim.getTime() < 0.78:
             win.flip()
         
 event.clearEvents()
-txt_instr.text = "You have concluded the first part of the task. Please give yourself a two minutes break in order to start the second part. After two minutes the new instructions will appear automatically."
+txt_instr.text = "You have concluded the first part of the task. Please give yourself a one minute break in order to start the second part. After this the new instructions will appear automatically."
 txt_instr.draw()
 win.flip()
 
@@ -230,7 +230,7 @@ for i in range(numb_practax):
         
         event.clearEvents()
         
-        while clk_stim.getTime() < 0.690:
+        while clk_stim.getTime() < 0.550:
             txt_stim.draw()
             win.flip()
         
@@ -256,7 +256,7 @@ for i in range(numb_practax):
         indx_counter += 1
         previous_letter.append(stim)
         
-        while clk_stim.getTime() < 0.92:
+        while clk_stim.getTime() < 0.78:
             win.flip()
 
 event.clearEvents()
@@ -284,7 +284,7 @@ for i in range(numb_runsax):
             txt_stim.draw()
             win.flip()
         event.clearEvents()
-        while clk_stim.getTime() < 0.690:
+        while clk_stim.getTime() < 0.550:
             txt_stim.draw()
             win.flip()
         
@@ -315,13 +315,13 @@ for i in range(numb_runsax):
         indx_counter += 1
         previous_letter.append(stim)
         
-        while clk_stim.getTime() < 0.92:
+        while clk_stim.getTime() < 0.78:
             win.flip()
 
 omissionsrate_x = omissions_x/total_x
-commissionsrate_x = commissions_x/23
+commissionsrate_x = commissions_x/notarg_x
 omissionsrate_ax = omissions_ax/total_ax
-commissionsrate_ax = (commissions_nox+commissions_noa+commissions_nxna)/25
+commissionsrate_ax = (commissions_nox+commissions_noa+commissions_nxna)/notarg_ax
 mean_correctx_RT = np.mean(correct_x)
 mean_correctax_RT = np.mean(correct_ax)
 mean_commissionsna_RT = np.mean(commissionsls_noa)
@@ -336,8 +336,8 @@ np.savetxt(file_name,[('targets_x','omissions_x','omissionsrate_x','notargets_x'
     notarg_ax,commissions_nox,commissions_noa,commissions_nxna,commissionsrate_ax,mean_correctx_RT,mean_correctax_RT,
     mean_commissionsx_RT,mean_commissionsnx_RT,mean_commissionsna_RT)],delimiter=',',fmt='%s')
 
-raw_rtx = 'RT_X,'+str(correct_x)[1:-1]
-raw_rtax = 'RT_AX,'+str(correct_ax)[1:-1]
+raw_rtx = 'corrRT_X,'+str(correct_x)[1:-1]
+raw_rtax = 'corrRT_AX,'+str(correct_ax)[1:-1]
 raw_comx = 'Commissions_X,'+str(commissionsls_x)[1:-1]
 raw_comna = 'Commissions_noa,'+str(commissionsls_noa)[1:-1]
 raw_comnx = 'Commissions_nox,'+str(commissionsls_nox)[1:-1]

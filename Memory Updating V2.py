@@ -232,7 +232,7 @@ correct2 = 0
 correct4 = 0
 correct6 = 0
 
-txt_instr.text = "In the following task you will be presented with two rows of boxes. The number of boxes per row can vary from 1 to 3. Each box will contain a number inside between 1 and 9 and you will be required to remember them, as they will be updated with basic additions and substractions. After a few of these operations you will be asked to type in the final number of each of these boxes. The results will always be numbers between 1 and 9, so you don't have to worry about complex arithmetics. First, you'll do some practice trials so you know how the task works.\n\nPress the <space> bar to start."
+txt_instr.text = "In the following task you will be presented with two rows of boxes. The number of boxes per row can be either 1 or 2. Each box will contain a number inside between 1 and 9 and you will be required to remember them, as they will be updated with basic additions and subtractions. After a few of these operations you will be asked to type in the final number of each of these boxes. Each box is completely independent from the other boxes, so the additions and subtractions only affect each particular box. The results will always be numbers between 1 and 9, so you don't have to worry about complex arithmetics. First, you'll do some practice trials so you know how the task works.\n\nPress the <space> bar to start."
 txt_instr.draw()
 win.flip()
 
@@ -552,7 +552,7 @@ for trial in practice_pool:
     
     event.waitKeys()
 
-txt_instr.text = "Now that you have done some practice we can start the real trials. Don't worry if you found the task hard, specially the ones with more boxes, that's normal.\n\nIf you fell you still don't quite underestand how the task works do not hesitate to ask the examiner. It is very important that you feel confident regarding what you are expected to do.\n\nIf you fell ready to start just press the <space> bar. You are allowed to take short rests between trials (after entering the response and before the next set of boxes appear)."
+txt_instr.text = "Now that you have done some practice we can start the real trials. Don't worry if you found the task hard, specially the ones with more boxes, that's normal.\n\nIf you feel you still don't quite understand how the task works do not hesitate to ask the examiner. It is very important that you feel confident regarding what you are expected to do.\n\nIf you feel ready to start just press the <space> bar. You are allowed to take short rests between trials (after entering the response and before the next set of boxes appear)."
 txt_instr.draw()
 win.flip()
 event.waitKeys(keyList=['space'])
@@ -704,10 +704,8 @@ for trial in range(10): #this must correspond with the number of items in runs_p
             if len(stim_track) > 1:
                 if stim['pos'] == stim_track[-2]:
                     resp_nosw4.append(round(resp_prestore[-1][1],4))
-                    print 'nosw', resp_nosw4
                 else:
                     resp_sw4.append(round(resp_prestore[-1][1],4))
-                    print 'sw', resp_sw4
             
             reset_box_color()
             box_draw(4)
