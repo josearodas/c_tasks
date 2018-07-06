@@ -10,6 +10,9 @@ from __future__ import division
 from psychopy import visual, core, data, event, gui
 import numpy as np
 import random
+import os
+import pandas as pd
+import matplotlib.pyplot as plt
 
 
 '''Some functions. block_creator creates the blocks with 6 n-back repetitions.
@@ -98,21 +101,22 @@ if my_dlg.OK == False:
 
 id_participant = str(my_dlg.data[0])
 date = data.getDateStr()
+date_reg = data.getDateStr()[:11]
 
-file_name = id_participant+'_n-back_'+date+'.csv'
+file_name = id_participant+'_n-back_'+date
 data_headings = 'trial;n-level;Details'
 
 win = visual.Window(
-        fullscr = False,
+        fullscr = True,
         color=(1,1,1),
         units = 'pix'
         )
 
-#win.mouseVisible=False
+win.mouseVisible=False
 
 txt_menu = visual.TextStim(win = win, color=(-1,-1,-1), height=24)
 txt_session_t = visual.TextStim(win = win, pos=(0,-250),color = (-1,-1,-1))
-txt_instr = visual.TextStim(win, pos=(0,180), wrapWidth=1000,
+txt_instr = visual.TextStim(win, pos=(0,180), wrapWidth=800,
     text="In a scale from 1 to 5 how motivated to do the training are you feeling today? Please type a number",
     height=24,color=(-1,-1,-1))
 txt_input = visual.TextStim(win, color=(-1,-1,-1), units='norm', pos=(0,-0.4), 
@@ -137,11 +141,7 @@ stim_pool = [{'area':'a1','x':-150,'y':150},{'area':'a2','x':0,'y':150},
     {'area':'a3','x':150,'y':150},{'area':'b1','x':-150,'y':0},{'area':'b3','x':150,'y':0},
     {'area':'c1','x':-150,'y':-150},{'area':'c2','x':0,'y':-150},{'area':'c3','x':150,'y':-150}]
 
-with open('nback_system') as nback_level_file:
-    #print (nback_level_file.readlines()[-1])[3]
-    nback_level = int((nback_level_file.readlines()[-1])[6])
 
-#nback_history = []   #this var will store each n-back level within the session to create a mean n-back level for each session in order to present it on a graph
 motivation = 0
 
 txt_instr.draw()
@@ -153,11 +153,19 @@ motivation = typed_resp()
 #Create the file to insert each trial data
 np.savetxt(
     file_name,
-    ['session,motivation,day_session,n-level,details'],
+    ['session,date,motivation,day_session,n-level,details'],
     fmt = '%s',
     delimiter = ',',
     newline = '\n',
     )
+
+with open('nback_system') as nbackfile:
+    last_line = nbackfile.readlines()[-1]
+    nback_level = int(last_line[18])
+    if last_line[2:13] == date_reg:
+        day_session = int(last_line[16])+1
+    else:
+        day_session = 1
 
 for session_trial in range(20):
     
@@ -167,8 +175,8 @@ for session_trial in range(20):
 
     block = block_creator(nback_level)
     
-    txt_menu.text= 'Please choose one of the following options by pressing the given key:\n\n        s => Start a new trial block\n    esc => Quit\n\n\n\nRemember that <space> bar indicates a match'
-    txt_session_t.text = 'Block %s\nN-back level = %s' % ((session_trial+1), nback_level)
+    txt_menu.text= 'Please choose one of the following options by pressing the given key:\n\n        s => Start a new trial block\n        p => Show progress\n    esc => Quit\n\n\n\nRemember that <space> bar indicates a match'
+    txt_session_t.text = 'Block %s\nN-back level = %s' % (day_session, nback_level)
     
     while True:
         txt_menu.draw()
@@ -178,6 +186,19 @@ for session_trial in range(20):
         if 'escape' in k:
             #insert core for creating the data file
             core.quit()
+        elif 'p' in k:
+            data = pd.read_csv('nback_system')
+            plt.plot(data.Session,data.n_level)
+            plt.ylabel('N-level')
+            plt.xlabel('Blocks')
+            plt.title('Press any key to go back')
+            plt.savefig('progress.png')
+            fig_progress = visual.ImageStim(win,image='progress.png')
+            fig_progress.draw()
+            win.flip()
+            event.waitKeys()
+            os.remove('progress.png')
+            del data
         elif 's' in k:
             break
     
@@ -217,31 +238,37 @@ for session_trial in range(20):
                 responses.append(['i',key_pressed[-1][1]])
                 errors += 1
     
-    #The following section updates the file
     
+    #The following section updates the file
     with open('nback_system') as nbackfile:
         session_numb = int(nbackfile.readlines()[-1][0])
     
     with open(file_name,'a') as sendfile:
         sendfile.write(str(session_numb+1))
         sendfile.write(',')
+        sendfile.write(str(date_reg))
+        sendfile.write(',')
         sendfile.write(str(motivation))
         sendfile.write(',')
-        sendfile.write(str(nsession_trial+1))
+        sendfile.write(str(day_session))
         sendfile.write(',')
         sendfile.write(str(nback_level))
         sendfile.write(',')
         sendfile.write(str(responses))
+        sendfile.write('\n')
 
     
     with open('nback_system','a') as nbackfile:
+        nbackfile.write('\n')
         nbackfile.write(str(session_numb+1))
         nbackfile.write(',')
-        nbackfile.write(str(nsession_trial+1))
+        nbackfile.write(str(date_reg))
+        nbackfile.write(',')
+        nbackfile.write(str(motivation))
+        nbackfile.write(',')
+        nbackfile.write(str(day_session))
         nbackfile.write(',')
         nbackfile.write(str(nback_level))
-        nbackfile.write(',')
-        nbackfile.write(str(responses))
     
     #adjust the n-back level
     if errors > 5:
@@ -249,12 +276,11 @@ for session_trial in range(20):
             nback_level -= 1
     elif errors < 3:
         nback_level += 1
-    
-    with open('nback_system','w') as nback_level_file:
-        nback_level_file.write(str(nback_level))
-    
+
+
     #reset variables
     del order, responses, block, errors
+    day_session += 1
 
 '''I must create a file for each session to store each block's RTs, responses (infor in var), # of errors, nback_level
 '''
