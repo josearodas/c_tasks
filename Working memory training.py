@@ -227,7 +227,7 @@ for session_trial in range(20):
         sendfile.write(',')
         sendfile.write(str(motivation))
         sendfile.write(',')
-        sendfile.write(str(nsession_trial+1))
+        sendfile.write(str(session_trial+1))
         sendfile.write(',')
         sendfile.write(str(nback_level))
         sendfile.write(',')
@@ -237,7 +237,7 @@ for session_trial in range(20):
     with open('nback_system','a') as nbackfile:
         nbackfile.write(str(session_numb+1))
         nbackfile.write(',')
-        nbackfile.write(str(nsession_trial+1))
+        nbackfile.write(str(session_trial+1))
         nbackfile.write(',')
         nbackfile.write(str(nback_level))
         nbackfile.write(',')
