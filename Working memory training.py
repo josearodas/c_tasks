@@ -153,7 +153,7 @@ motivation = typed_resp()
 #Create the file to insert each trial data
 np.savetxt(
     file_name,
-    ['session,date,motivation,day_session,n-level,details'],
+    ['date,motivation,day_session,n-level,details'],
     fmt = '%s',
     delimiter = ',',
     newline = '\n',
@@ -161,9 +161,9 @@ np.savetxt(
 
 with open('nback_system') as nbackfile:
     last_line = nbackfile.readlines()[-1]
-    nback_level = int(last_line[18])
-    if last_line[2:13] == date_reg:
-        day_session = int(last_line[16])+1
+    nback_level = int(last_line[16])
+    if last_line[:10] == date_reg:
+        day_session = int(last_line[14])+1
     else:
         day_session = 1
 
@@ -186,11 +186,30 @@ for session_trial in range(20):
         if 'escape' in k:
             #insert core for creating the data file
             core.quit()
+
         elif 'p' in k:
             data = pd.read_csv('nback_system')
-            plt.plot(data.Session,data.n_level)
+            
+            tmp_meanscore = []
+            tmp_dayscore = []
+            tmp_date_reg = ['xxx_xxx_xx']
+
+            for index, i in data.iterrows():
+                tmp_date = i['Date']
+                tmp_level = i['n_level']
+
+                if tmp_date == tmp_date_reg[-1]:
+                    tmp_meanscore.append(int(tmp_level))
+                else:
+                    tmp_dayscore.append(np.mean(tmp_meanscore))
+                    tmp_meanscore = []
+                    tmp_date_reg.append(tmp_date)
+
+            tmp_dayscore.append(np.mean(tmp_meanscore))
+            
+            plt.plot(tmp_dayscore[1:])
             plt.ylabel('N-level')
-            plt.xlabel('Blocks')
+            plt.xlabel('Sessions')
             plt.title('Press any key to go back')
             plt.savefig('progress.png')
             fig_progress = visual.ImageStim(win,image='progress.png')
@@ -198,7 +217,8 @@ for session_trial in range(20):
             win.flip()
             event.waitKeys()
             os.remove('progress.png')
-            del data
+            del data, tmp_meanscore, tmp_date_reg, tmp_date, tmp_level, tmp_dayscore
+
         elif 's' in k:
             break
     
@@ -240,12 +260,8 @@ for session_trial in range(20):
     
     
     #The following section updates the file
-    with open('nback_system') as nbackfile:
-        session_numb = int(nbackfile.readlines()[-1][0])
     
     with open(file_name,'a') as sendfile:
-        sendfile.write(str(session_numb+1))
-        sendfile.write(',')
         sendfile.write(str(date_reg))
         sendfile.write(',')
         sendfile.write(str(motivation))
@@ -260,8 +276,6 @@ for session_trial in range(20):
     
     with open('nback_system','a') as nbackfile:
         nbackfile.write('\n')
-        nbackfile.write(str(session_numb+1))
-        nbackfile.write(',')
         nbackfile.write(str(date_reg))
         nbackfile.write(',')
         nbackfile.write(str(motivation))
