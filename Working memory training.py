@@ -250,11 +250,7 @@ for session_trial in range(20):
         sendfile.write(',')
         sendfile.write(str(motivation))
         sendfile.write(',')
-<<<<<<< HEAD
         sendfile.write(str(session_trial+1))
-=======
-        sendfile.write(str(day_session))
->>>>>>> 4b00e943efa0bd8b9f4f38f953643bb5b76d7afa
         sendfile.write(',')
         sendfile.write(str(nback_level))
         sendfile.write(',')
@@ -266,11 +262,7 @@ for session_trial in range(20):
         nbackfile.write('\n')
         nbackfile.write(str(session_numb+1))
         nbackfile.write(',')
-<<<<<<< HEAD
         nbackfile.write(str(session_trial+1))
-=======
-        nbackfile.write(str(date_reg))
->>>>>>> 4b00e943efa0bd8b9f4f38f953643bb5b76d7afa
         nbackfile.write(',')
         nbackfile.write(str(motivation))
         nbackfile.write(',')
