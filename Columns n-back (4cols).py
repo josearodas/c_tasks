@@ -182,7 +182,7 @@ win.flip()
 
 event.clearEvents()
 
-txt_instr.text = "If the same digit appears in the same column during the next row you will have to indicate that a match has occurred by pressing the <m> key. This will also make the next digit to appear. If there is no match between digits you press the <z> key to make the next digit appear (new digits will not be presented unless you press either the <z> or the <m> key).\n\n     m --> match\n     z  --> no match.\n\nPress the <space> bar to see an example (you will also be able to practice before starting the task)."
+txt_instr.text = "If the same digit appears in the same column during the next row you will have to indicate that a match has occurred by pressing the <m> key. This will also make the next digit appear. If there is no match between digits you press the <z> key to make the next digit appear (new digits will not be presented unless you press either the <z> or the <m> key).\n\n     m --> match\n     z  --> no match.\n\nPress the <space> bar to see an example (you will also be able to practice before starting the task)."
 txt_instr.wrapWidth = 1.5
 txt_instr.height = 0.07
 txt_instr.pos = (0,0)
@@ -248,7 +248,7 @@ while pract_quit == 0:
                 win.flip()
                 core.wait(2)
     
-    txt_instr.text = 'Now we will practcice with two columns. The task is the same but you will have to remember the number of two separate columns. Remember to keep in mind just the number that was presented one position above of each column.\n\nPress the <space> bar to start.'
+    txt_instr.text = 'Now we will practice with two columns. The task is the same but you will have to remember the number of two different columns. Remember to keep in mind just the number that was presented one position above of each column.\n\nPress the <space> bar to start.'
     txt_instr.pos=(0,0)
     txt_instr.draw()
     win.flip()
