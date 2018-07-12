@@ -144,11 +144,13 @@ stim_pool = [{'area':'a1','x':-150,'y':150},{'area':'a2','x':0,'y':150},
 
 motivation = 0
 
-txt_instr.draw()
-txt_legend.draw()
-win.flip()
+while motivation == '' or motivation == 0:
+    txt_instr.draw()
+    txt_legend.draw()
+    win.flip()
 
-motivation = typed_resp()
+    motivation = typed_resp()
+
 
 #Create the file to insert each trial data
 np.savetxt(
@@ -161,9 +163,9 @@ np.savetxt(
 
 with open('nback_system') as nbackfile:
     last_line = nbackfile.readlines()[-1]
-    nback_level = int(last_line[16])
-    if last_line[:10] == date_reg:
-        day_session = int(last_line[14])+1
+    nback_level = int(last_line[17:])
+    if last_line[:11] == date_reg:
+        day_session = int(last_line[14:16])+1
     else:
         day_session = 1
 
@@ -280,9 +282,11 @@ for session_trial in range(20):
         nbackfile.write(',')
         nbackfile.write(str(motivation))
         nbackfile.write(',')
-        nbackfile.write(str(day_session))
+        if day_session < 10:
+            nbackfile.write('0'+str(day_session))
         nbackfile.write(',')
-        nbackfile.write(str(nback_level))
+        if nback_level < 10:
+            nbackfile.write('0'+str(nback_level))
     
     #adjust the n-back level
     if errors > 5:
