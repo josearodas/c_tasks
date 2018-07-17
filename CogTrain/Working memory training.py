@@ -284,9 +284,13 @@ for session_trial in range(20):
         nbackfile.write(',')
         if day_session < 10:
             nbackfile.write('0'+str(day_session))
+        else:
+            nbackfile.write(str(day_session))
         nbackfile.write(',')
         if nback_level < 10:
             nbackfile.write('0'+str(nback_level))
+        else:
+            nbackfile.write(str(nback_level))
     
     #adjust the n-back level
     if errors > 5:
