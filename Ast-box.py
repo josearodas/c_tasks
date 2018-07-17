@@ -28,7 +28,8 @@ def trial_run(cond, runs):
     t_run = []
     initial_trial = []
     
-    letters_trial = ['Q','W','R','T','P','S','D','F','G','H','J','K','L','Z','X','C','B','N']
+    letters_trial = ['Q','W','R','T','P','S','D','F','G','H','J','K','L','Z','X','C','B','N',
+            'Q','W','R','T','P','S','D','F','G','H','J','K','L','Z','X','C','B','N']
     
     for i in range(4): # create the first letters to show
         initial_trial.append(random.choice(letters_trial))
@@ -49,7 +50,7 @@ def trial_run(cond, runs):
         t_run[-1]['condition'] = present_cond['condition'] #modify the new trial
         for stim_index in present_cond['replace']:
             letter_replace = random.choice(letters_trial)
-            #letters_trial.remove(letter_replace)
+            letters_trial.remove(letter_replace)
             t_run[-1]['stim'][stim_index] = letter_replace
             t_run[-1]['answer'][stim_index] = letter_replace
             counter += 1
