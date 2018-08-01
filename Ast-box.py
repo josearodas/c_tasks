@@ -28,9 +28,10 @@ def trial_run(cond, runs):
     t_run = []
     initial_trial = []
     
-    letters_trial = ['Q','W','R','T','P','S','D','F','G','H','J','K','L','Z','X','C','B','N']
+    letters_trial = ['Q','W','R','T','P','S','D','F','G','H','J','K','L','Z','X','C','B','N',
+            'Q','W','R','T','P','S','D','F','G','H','J','K','L','Z','X','C','B','N']
     
-    for i in range(4):
+    for i in range(4): # create the first letters to show
         initial_trial.append(random.choice(letters_trial))
         letters_trial.remove(initial_trial[-1])
     
@@ -38,15 +39,15 @@ def trial_run(cond, runs):
     
     current_numbTrials = random.choice(runs)
     for trial in range(current_numbTrials):
-        t_run.append(copy.deepcopy(t_run[-1]))
+        t_run.append(copy.deepcopy(t_run[-1])) #add the new trial
         
-        while True:
+        while True: #select the condition to include in the trial and reduce the counter
             present_cond = random.choice(cond)
             if present_cond['rep_counter'] > 0:
                 present_cond['rep_counter'] -= 1
                 break
         counter = 0
-        t_run[-1]['condition'] = present_cond['condition']
+        t_run[-1]['condition'] = present_cond['condition'] #modify the new trial
         for stim_index in present_cond['replace']:
             letter_replace = random.choice(letters_trial)
             letters_trial.remove(letter_replace)

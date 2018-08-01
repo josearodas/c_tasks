@@ -311,7 +311,7 @@ while nback_level <= 4:
     mean_RT = []
     prov_allerrors = 0
     
-    for i in range(10):
+    for i in range(7):
         block = block_creator(nback_level)
         
         order = ['empty']*nback_level

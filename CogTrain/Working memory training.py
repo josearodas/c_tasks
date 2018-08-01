@@ -186,7 +186,6 @@ for session_trial in range(20):
         win.flip()
         k = event.waitKeys()
         if 'escape' in k:
-            #insert core for creating the data file
             core.quit()
 
         elif 'p' in k:
@@ -194,7 +193,7 @@ for session_trial in range(20):
             
             tmp_meanscore = []
             tmp_dayscore = []
-            tmp_date_reg = ['xxx_xxx_xx']
+            tmp_date_reg = ['xxxx_xxx_xx']
 
             for index, i in data.iterrows():
                 tmp_date = i['Date']
@@ -204,7 +203,7 @@ for session_trial in range(20):
                     tmp_meanscore.append(int(tmp_level))
                 else:
                     tmp_dayscore.append(np.mean(tmp_meanscore))
-                    tmp_meanscore = []
+                    tmp_meanscore = [int(tmp_level)]
                     tmp_date_reg.append(tmp_date)
 
             tmp_dayscore.append(np.mean(tmp_meanscore))
@@ -284,9 +283,13 @@ for session_trial in range(20):
         nbackfile.write(',')
         if day_session < 10:
             nbackfile.write('0'+str(day_session))
+        else:
+            nbackfile.write(str(day_session))
         nbackfile.write(',')
         if nback_level < 10:
             nbackfile.write('0'+str(nback_level))
+        else:
+            nbackfile.write(str(nback_level))
     
     #adjust the n-back level
     if errors > 5:
