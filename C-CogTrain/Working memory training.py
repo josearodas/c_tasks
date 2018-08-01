@@ -107,7 +107,7 @@ file_name = id_participant+'_n-back_'+date
 data_headings = 'trial;n-level;Details'
 
 win = visual.Window(
-        fullscr = True,
+        fullscr = False,
         color=(1,1,1),
         units = 'pix'
         )
@@ -172,7 +172,7 @@ with open('nback_system') as nbackfile:
 for session_trial in range(20):
     
     order = ['b2']*nback_level
-    responses = []    #this var stores participants responses with RT; can be either correct (c), incorrect (i) or miss (m)
+    responses = []    #this var stores participants responses in RT
     errors = 0    #missess and incorrects are considered errors; this counter control the adaptive n-back
 
     block = block_creator(nback_level)
@@ -197,7 +197,7 @@ for session_trial in range(20):
 
             for index, i in data.iterrows():   #will iterate over each row
                 tmp_date = i['Date']
-                tmp_level = i['RT']
+                tmp_level = i['score']
 
                 if tmp_date == tmp_date_reg[-1]:   #appends scores from dame date
                     tmp_meanscore.append(float(tmp_level))
@@ -209,7 +209,7 @@ for session_trial in range(20):
             tmp_dayscore.append(np.mean(tmp_meanscore))
             
             plt.plot(tmp_dayscore[1:])
-            plt.ylabel('Response time')
+            plt.ylabel('Score')
             plt.xlabel('Sessions')
             plt.title('Press any key to go back')
             plt.savefig('progress.png')
@@ -242,7 +242,7 @@ for session_trial in range(20):
             square_stim.draw()
             win.flip()
         
-        while clock.getTime() < 1:   #only the grid (no square) must be shown for 2s
+        while clock.getTime() < 2:   #only the grid (no square) must be shown for 2s
             grid.draw()
             win.flip()
         
@@ -259,6 +259,8 @@ for session_trial in range(20):
                 responses.append([2])   #penalization
                 errors += 1
     
+    #Calculate a score
+    score = [21 - errors]/np.mean(responses)
     
     #The following section updates the file
     
@@ -271,7 +273,7 @@ for session_trial in range(20):
         sendfile.write(',')
         sendfile.write(str(nback_level))
         sendfile.write(',')
-        sendfile.write(str(responses))
+        sendfile.write(str(round(score,3)))
         sendfile.write('\n')
 
     
@@ -286,10 +288,7 @@ for session_trial in range(20):
         else:
             nbackfile.write(str(day_session))
         nbackfile.write(',')
-        if nback_level < 10:
-            nbackfile.write('0'+str(nback_level))
-        else:
-            nbackfile.write(str(nback_level))
+        nbackfile.write(str(round(score,3)))
     
     #reset variables
     del order, responses, block, errors
