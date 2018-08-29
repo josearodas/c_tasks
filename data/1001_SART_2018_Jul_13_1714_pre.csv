@@ -1,3 +1,0 @@
-# SART test
-Participant,n_trials,n_commissions,perc_commissions,n_omissions,perc_omissions,n_anticipatory,perc_anticipatory,mean_rtGO,std_rtGO,CV_go,meanRT_GObeforesuccessNOGO,meanRT_GObeforefailedNOGO,n_correct,perc_correct,n_errors,perc_errors,n_ambiguous,perc_amboguous
-1001,225,8,32.0,3,1.5,0,0.0,0.474,0.103,0.217299578059,0.468,0.461,214,95.111,11,4.889,0,0.0
