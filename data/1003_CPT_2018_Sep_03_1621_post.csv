@@ -1,0 +1,2 @@
+targets,omissions,omissions_rate,notargets,commissions,commissions_rate,delayed,delayed_rate,meanRT_corr,meanRT_comm,delayed_RT
+176,20,0.113636363636,506,0,0.0,7,0.0397727272727,0.702422818792,nan,0.318857142857
