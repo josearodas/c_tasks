@@ -1,0 +1,1757 @@
+15.8172 	WARNING 	User requested fullscreen with size [1366  768], but screen is actually [1920, 1080]. Using actual size
+17.1415 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([-1., -1., -1.]), colorSpace='rgb', fullscr=UNKNOWN, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x1A0B1290>, multiSample=False, name='window1', numSamples=2, pos=[0, 0], screen=0, size=array([1920, 1080]), stereo=False, units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType=u'pyglet')
+17.1417 	EXP 	window1: recordFrameIntervals = False
+17.3081 	EXP 	window1: recordFrameIntervals = True
+17.4914 	EXP 	window1: recordFrameIntervals = False
+18.0539 	EXP 	Created instr = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=28, italic=False, name='instr', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 1.,  1.,  1.]), text=newstr(...), units='pix', win=Window(...), wrapWidth=900)
+18.0891 	EXP 	Created stimuli = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='stimuli', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 1.,  1.,  1.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+18.1437 	EXP 	Created hint = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.07, italic=False, name='hint', opacity=1.0, ori=0, pos=array([ 0. ,  0.7]), rgb=array([ 255.,  255.,  255.]), text='left => red    down => green   right = blue', units='norm', win=Window(...), wrapWidth=1)
+18.1706 	EXP 	Created msgFeedback = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='msgFeedback', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 1.,  1.,  1.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+18.4168 	EXP 	Created text = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=28, italic=False, name='text', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=newstr(...), units='pix', win=Window(...), wrapWidth=900)
+18.4350 	EXP 	Created stimuli = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='stimuli', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 1.,  1.,  1.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+18.4804 	EXP 	Created hint = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.07, italic=False, name='hint', opacity=1.0, ori=0, pos=array([ 0. ,  0.7]), rgb=array([ 255.,  255.,  255.]), text='left => red    down => green   right = blue', units='norm', win=Window(...), wrapWidth=1)
+18.5617 	EXP 	Created text_2 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=28, italic=False, name='text_2', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=newstr(...), units='pix', win=Window(...), wrapWidth=900)
+18.5705 	EXP 	instr: autoDraw = True
+58.7035 	DATA 	Keypress: space
+58.8270 	EXP 	Imported pract_conditions.xlsx as conditions, 12 conditions, 4 params
+58.8275 	EXP 	Created sequence: random, trialTypes=12, nReps=2, seed=None
+58.8280 	EXP 	New trial (rep=0, index=0): OrderedDict([('word', u'blue'), ('color', u'red'), ('congruent', 0), ('corrAns', u'left')])
+58.8479 	EXP 	instr: autoDraw = False
+58.8479 	EXP 	stimuli: color = u'red (named)'
+58.8479 	EXP 	stimuli: text = u'blue'
+58.8479 	EXP 	hint: autoDraw = True
+59.3527 	EXP 	stimuli: autoDraw = True
+62.5710 	DATA 	Keypress: left
+62.6426 	EXP 	stimuli: autoDraw = False
+62.6426 	EXP 	hint: autoDraw = False
+62.6426 	EXP 	msgFeedback: text = 'Correct! RT=3.218'
+62.6426 	EXP 	msgFeedback: autoDraw = True
+64.0726 	EXP 	New trial (rep=0, index=1): OrderedDict([('word', u'red'), ('color', u'green'), ('congruent', 0), ('corrAns', u'down')])
+64.1070 	EXP 	msgFeedback: autoDraw = False
+64.1070 	EXP 	msgFeedback: autoDraw = False
+64.1070 	EXP 	stimuli: color = u'green (named)'
+64.1070 	EXP 	stimuli: text = u'red'
+64.1070 	EXP 	hint: autoDraw = True
+64.6045 	EXP 	stimuli: autoDraw = True
+65.6078 	DATA 	Keypress: down
+65.6705 	EXP 	stimuli: autoDraw = False
+65.6705 	EXP 	hint: autoDraw = False
+65.6705 	EXP 	msgFeedback: text = 'Correct! RT=1.017'
+65.6705 	EXP 	msgFeedback: autoDraw = True
+67.1235 	EXP 	New trial (rep=0, index=2): OrderedDict([('word', u'red'), ('color', u'green'), ('congruent', 0), ('corrAns', u'down')])
+67.1385 	EXP 	msgFeedback: autoDraw = False
+67.1385 	EXP 	msgFeedback: autoDraw = False
+67.1385 	EXP 	stimuli: color = u'green (named)'
+67.1385 	EXP 	stimuli: text = u'red'
+67.1385 	EXP 	hint: autoDraw = True
+67.6554 	EXP 	stimuli: autoDraw = True
+68.2897 	DATA 	Keypress: down
+68.3369 	EXP 	stimuli: autoDraw = False
+68.3369 	EXP 	hint: autoDraw = False
+68.3369 	EXP 	msgFeedback: text = 'Correct! RT=0.634'
+68.3369 	EXP 	msgFeedback: autoDraw = True
+69.7918 	EXP 	New trial (rep=0, index=3): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+69.8348 	EXP 	msgFeedback: autoDraw = False
+69.8348 	EXP 	msgFeedback: autoDraw = False
+69.8348 	EXP 	stimuli: color = u'green (named)'
+69.8348 	EXP 	stimuli: text = u'green'
+69.8348 	EXP 	hint: autoDraw = True
+70.3230 	EXP 	stimuli: autoDraw = True
+70.9740 	DATA 	Keypress: down
+71.0138 	EXP 	stimuli: autoDraw = False
+71.0138 	EXP 	hint: autoDraw = False
+71.0138 	EXP 	msgFeedback: text = 'Correct! RT=0.651'
+71.0138 	EXP 	msgFeedback: autoDraw = True
+72.4748 	EXP 	New trial (rep=0, index=4): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+72.5062 	EXP 	msgFeedback: autoDraw = False
+72.5062 	EXP 	msgFeedback: autoDraw = False
+72.5062 	EXP 	stimuli: color = u'blue (named)'
+72.5062 	EXP 	stimuli: text = u'blue'
+72.5062 	EXP 	hint: autoDraw = True
+73.0070 	EXP 	stimuli: autoDraw = True
+73.5244 	DATA 	Keypress: right
+73.5712 	EXP 	stimuli: autoDraw = False
+73.5712 	EXP 	hint: autoDraw = False
+73.5712 	EXP 	msgFeedback: text = 'Correct! RT=0.518'
+73.5712 	EXP 	msgFeedback: autoDraw = True
+75.0259 	EXP 	New trial (rep=0, index=5): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+75.0410 	EXP 	msgFeedback: autoDraw = False
+75.0410 	EXP 	msgFeedback: autoDraw = False
+75.0410 	EXP 	stimuli: color = u'blue (named)'
+75.0410 	EXP 	stimuli: text = u'blue'
+75.0410 	EXP 	hint: autoDraw = True
+75.5579 	EXP 	stimuli: autoDraw = True
+76.1921 	DATA 	Keypress: right
+76.2414 	EXP 	stimuli: autoDraw = False
+76.2414 	EXP 	hint: autoDraw = False
+76.2414 	EXP 	msgFeedback: text = 'Correct! RT=0.634'
+76.2414 	EXP 	msgFeedback: autoDraw = True
+77.6931 	EXP 	New trial (rep=0, index=6): OrderedDict([('word', u'blue'), ('color', u'green'), ('congruent', 0), ('corrAns', u'down')])
+77.7083 	EXP 	msgFeedback: autoDraw = False
+77.7083 	EXP 	msgFeedback: autoDraw = False
+77.7083 	EXP 	stimuli: color = u'green (named)'
+77.7083 	EXP 	stimuli: text = u'blue'
+77.7083 	EXP 	hint: autoDraw = True
+78.2252 	EXP 	stimuli: autoDraw = True
+78.9447 	DATA 	Keypress: down
+79.0001 	EXP 	stimuli: autoDraw = False
+79.0001 	EXP 	hint: autoDraw = False
+79.0001 	EXP 	msgFeedback: text = 'Correct! RT=0.734'
+79.0001 	EXP 	msgFeedback: autoDraw = True
+80.4606 	EXP 	New trial (rep=0, index=7): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+80.4932 	EXP 	msgFeedback: autoDraw = False
+80.4932 	EXP 	msgFeedback: autoDraw = False
+80.4932 	EXP 	stimuli: color = u'green (named)'
+80.4932 	EXP 	stimuli: text = u'green'
+80.4932 	EXP 	hint: autoDraw = True
+80.9931 	EXP 	stimuli: autoDraw = True
+81.5271 	DATA 	Keypress: down
+81.5801 	EXP 	stimuli: autoDraw = False
+81.5801 	EXP 	hint: autoDraw = False
+81.5801 	EXP 	msgFeedback: text = 'Correct! RT=0.534'
+81.5801 	EXP 	msgFeedback: autoDraw = True
+83.0281 	EXP 	New trial (rep=0, index=8): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+83.0572 	EXP 	msgFeedback: autoDraw = False
+83.0572 	EXP 	msgFeedback: autoDraw = False
+83.0572 	EXP 	stimuli: color = u'red (named)'
+83.0572 	EXP 	stimuli: text = u'red'
+83.0572 	EXP 	hint: autoDraw = True
+83.5603 	EXP 	stimuli: autoDraw = True
+83.9945 	DATA 	Keypress: left
+84.0473 	EXP 	stimuli: autoDraw = False
+84.0473 	EXP 	hint: autoDraw = False
+84.0473 	EXP 	msgFeedback: text = 'Correct! RT=0.434'
+84.0473 	EXP 	msgFeedback: autoDraw = True
+85.4955 	EXP 	New trial (rep=0, index=9): OrderedDict([('word', u'green'), ('color', u'blue'), ('congruent', 0), ('corrAns', u'right')])
+85.5261 	EXP 	msgFeedback: autoDraw = False
+85.5261 	EXP 	msgFeedback: autoDraw = False
+85.5261 	EXP 	stimuli: color = u'blue (named)'
+85.5261 	EXP 	stimuli: text = u'green'
+85.5261 	EXP 	hint: autoDraw = True
+86.0278 	EXP 	stimuli: autoDraw = True
+86.7788 	DATA 	Keypress: right
+86.8327 	EXP 	stimuli: autoDraw = False
+86.8327 	EXP 	hint: autoDraw = False
+86.8327 	EXP 	msgFeedback: text = 'Correct! RT=0.751'
+86.8327 	EXP 	msgFeedback: autoDraw = True
+88.2800 	EXP 	New trial (rep=0, index=10): OrderedDict([('word', u'green'), ('color', u'red'), ('congruent', 0), ('corrAns', u'left')])
+88.2951 	EXP 	msgFeedback: autoDraw = False
+88.2951 	EXP 	msgFeedback: autoDraw = False
+88.2951 	EXP 	stimuli: color = u'red (named)'
+88.2951 	EXP 	stimuli: text = u'green'
+88.2951 	EXP 	hint: autoDraw = True
+88.8120 	EXP 	stimuli: autoDraw = True
+89.9964 	DATA 	Keypress: left
+90.0456 	EXP 	stimuli: autoDraw = False
+90.0456 	EXP 	hint: autoDraw = False
+90.0456 	EXP 	msgFeedback: text = 'Correct! RT=1.185'
+90.0456 	EXP 	msgFeedback: autoDraw = True
+91.4977 	EXP 	New trial (rep=0, index=11): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+91.5292 	EXP 	msgFeedback: autoDraw = False
+91.5292 	EXP 	msgFeedback: autoDraw = False
+91.5292 	EXP 	stimuli: color = u'red (named)'
+91.5292 	EXP 	stimuli: text = u'red'
+91.5292 	EXP 	hint: autoDraw = True
+92.0296 	EXP 	stimuli: autoDraw = True
+92.5305 	DATA 	Keypress: left
+92.5803 	EXP 	stimuli: autoDraw = False
+92.5803 	EXP 	hint: autoDraw = False
+92.5803 	EXP 	msgFeedback: text = 'Correct! RT=0.501'
+92.5803 	EXP 	msgFeedback: autoDraw = True
+94.0314 	EXP 	New trial (rep=1, index=0): OrderedDict([('word', u'blue'), ('color', u'green'), ('congruent', 0), ('corrAns', u'down')])
+94.0613 	EXP 	msgFeedback: autoDraw = False
+94.0613 	EXP 	msgFeedback: autoDraw = False
+94.0613 	EXP 	stimuli: color = u'green (named)'
+94.0613 	EXP 	stimuli: text = u'blue'
+94.0613 	EXP 	hint: autoDraw = True
+94.5636 	EXP 	stimuli: autoDraw = True
+94.9809 	DATA 	Keypress: down
+95.0277 	EXP 	stimuli: autoDraw = False
+95.0277 	EXP 	hint: autoDraw = False
+95.0277 	EXP 	msgFeedback: text = 'Correct! RT=0.417'
+95.0277 	EXP 	msgFeedback: autoDraw = True
+96.4821 	EXP 	New trial (rep=1, index=1): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+96.5147 	EXP 	msgFeedback: autoDraw = False
+96.5147 	EXP 	msgFeedback: autoDraw = False
+96.5147 	EXP 	stimuli: color = u'green (named)'
+96.5147 	EXP 	stimuli: text = u'green'
+96.5147 	EXP 	hint: autoDraw = True
+97.0142 	EXP 	stimuli: autoDraw = True
+97.5671 	DATA 	Keypress: down
+97.6334 	EXP 	stimuli: autoDraw = False
+97.6334 	EXP 	hint: autoDraw = False
+97.6334 	EXP 	msgFeedback: text = 'Correct! RT=0.567'
+97.6334 	EXP 	msgFeedback: autoDraw = True
+99.0835 	EXP 	New trial (rep=1, index=2): OrderedDict([('word', u'red'), ('color', u'green'), ('congruent', 0), ('corrAns', u'down')])
+99.1129 	EXP 	msgFeedback: autoDraw = False
+99.1129 	EXP 	msgFeedback: autoDraw = False
+99.1129 	EXP 	stimuli: color = u'green (named)'
+99.1129 	EXP 	stimuli: text = u'red'
+99.1129 	EXP 	hint: autoDraw = True
+99.6152 	EXP 	stimuli: autoDraw = True
+100.0825 	DATA 	Keypress: down
+100.1340 	EXP 	stimuli: autoDraw = False
+100.1340 	EXP 	hint: autoDraw = False
+100.1340 	EXP 	msgFeedback: text = 'Correct! RT=0.468'
+100.1340 	EXP 	msgFeedback: autoDraw = True
+101.5840 	EXP 	New trial (rep=1, index=3): OrderedDict([('word', u'red'), ('color', u'green'), ('congruent', 0), ('corrAns', u'down')])
+101.5991 	EXP 	msgFeedback: autoDraw = False
+101.5991 	EXP 	msgFeedback: autoDraw = False
+101.5991 	EXP 	stimuli: color = u'green (named)'
+101.5991 	EXP 	stimuli: text = u'red'
+101.5991 	EXP 	hint: autoDraw = True
+102.1159 	EXP 	stimuli: autoDraw = True
+102.6333 	DATA 	Keypress: down
+102.6800 	EXP 	stimuli: autoDraw = False
+102.6800 	EXP 	hint: autoDraw = False
+102.6800 	EXP 	msgFeedback: text = 'Correct! RT=0.518'
+102.6800 	EXP 	msgFeedback: autoDraw = True
+104.1348 	EXP 	New trial (rep=1, index=4): OrderedDict([('word', u'blue'), ('color', u'red'), ('congruent', 0), ('corrAns', u'left')])
+104.1621 	EXP 	msgFeedback: autoDraw = False
+104.1621 	EXP 	msgFeedback: autoDraw = False
+104.1621 	EXP 	stimuli: color = u'red (named)'
+104.1621 	EXP 	stimuli: text = u'blue'
+104.1621 	EXP 	hint: autoDraw = True
+104.6671 	EXP 	stimuli: autoDraw = True
+105.3361 	DATA 	Keypress: down
+105.4092 	EXP 	stimuli: autoDraw = False
+105.4092 	EXP 	hint: autoDraw = False
+105.4092 	EXP 	msgFeedback: text = 'Not the key...'
+105.4092 	EXP 	msgFeedback: autoDraw = True
+105.4509 	DATA 	Keypress: left
+106.8519 	EXP 	New trial (rep=1, index=5): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+106.8741 	EXP 	msgFeedback: autoDraw = False
+106.8741 	EXP 	msgFeedback: autoDraw = False
+106.8741 	EXP 	stimuli: color = u'red (named)'
+106.8741 	EXP 	stimuli: text = u'red'
+106.8741 	EXP 	hint: autoDraw = True
+107.3845 	EXP 	stimuli: autoDraw = True
+107.9352 	DATA 	Keypress: left
+107.9808 	EXP 	stimuli: autoDraw = False
+107.9808 	EXP 	hint: autoDraw = False
+107.9808 	EXP 	msgFeedback: text = 'Correct! RT=0.552'
+107.9808 	EXP 	msgFeedback: autoDraw = True
+109.4372 	EXP 	New trial (rep=1, index=6): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+109.4515 	EXP 	msgFeedback: autoDraw = False
+109.4515 	EXP 	msgFeedback: autoDraw = False
+109.4515 	EXP 	stimuli: color = u'red (named)'
+109.4515 	EXP 	stimuli: text = u'red'
+109.4515 	EXP 	hint: autoDraw = True
+109.9683 	EXP 	stimuli: autoDraw = True
+110.5691 	DATA 	Keypress: left
+110.6212 	EXP 	stimuli: autoDraw = False
+110.6212 	EXP 	hint: autoDraw = False
+110.6212 	EXP 	msgFeedback: text = 'Correct! RT=0.601'
+110.6212 	EXP 	msgFeedback: autoDraw = True
+112.0704 	EXP 	New trial (rep=1, index=7): OrderedDict([('word', u'green'), ('color', u'blue'), ('congruent', 0), ('corrAns', u'right')])
+112.1081 	EXP 	msgFeedback: autoDraw = False
+112.1081 	EXP 	msgFeedback: autoDraw = False
+112.1081 	EXP 	stimuli: color = u'blue (named)'
+112.1081 	EXP 	stimuli: text = u'green'
+112.1081 	EXP 	hint: autoDraw = True
+112.6025 	EXP 	stimuli: autoDraw = True
+113.3700 	DATA 	Keypress: right
+113.4203 	EXP 	stimuli: autoDraw = False
+113.4203 	EXP 	hint: autoDraw = False
+113.4203 	EXP 	msgFeedback: text = 'Correct! RT=0.768'
+113.4203 	EXP 	msgFeedback: autoDraw = True
+114.8720 	EXP 	New trial (rep=1, index=8): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+114.9117 	EXP 	msgFeedback: autoDraw = False
+114.9117 	EXP 	msgFeedback: autoDraw = False
+114.9117 	EXP 	stimuli: color = u'blue (named)'
+114.9117 	EXP 	stimuli: text = u'blue'
+114.9117 	EXP 	hint: autoDraw = True
+115.4058 	EXP 	stimuli: autoDraw = True
+115.9221 	DATA 	Keypress: right
+115.9923 	EXP 	stimuli: autoDraw = False
+115.9923 	EXP 	hint: autoDraw = False
+115.9923 	EXP 	msgFeedback: text = 'Correct! RT=0.517'
+115.9923 	EXP 	msgFeedback: autoDraw = True
+117.4244 	EXP 	New trial (rep=1, index=9): OrderedDict([('word', u'green'), ('color', u'red'), ('congruent', 0), ('corrAns', u'left')])
+117.4736 	EXP 	msgFeedback: autoDraw = False
+117.4736 	EXP 	msgFeedback: autoDraw = False
+117.4736 	EXP 	stimuli: color = u'red (named)'
+117.4736 	EXP 	stimuli: text = u'green'
+117.4736 	EXP 	hint: autoDraw = True
+117.9542 	EXP 	stimuli: autoDraw = True
+118.9717 	DATA 	Keypress: left
+119.0209 	EXP 	stimuli: autoDraw = False
+119.0209 	EXP 	hint: autoDraw = False
+119.0209 	EXP 	msgFeedback: text = 'Correct! RT=1.018'
+119.0209 	EXP 	msgFeedback: autoDraw = True
+120.4738 	EXP 	New trial (rep=1, index=10): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+120.5050 	EXP 	msgFeedback: autoDraw = False
+120.5050 	EXP 	msgFeedback: autoDraw = False
+120.5050 	EXP 	stimuli: color = u'blue (named)'
+120.5050 	EXP 	stimuli: text = u'blue'
+120.5050 	EXP 	hint: autoDraw = True
+121.0051 	EXP 	stimuli: autoDraw = True
+121.8893 	DATA 	Keypress: right
+121.9426 	EXP 	stimuli: autoDraw = False
+121.9426 	EXP 	hint: autoDraw = False
+121.9426 	EXP 	msgFeedback: text = 'Correct! RT=0.884'
+121.9426 	EXP 	msgFeedback: autoDraw = True
+123.3904 	EXP 	New trial (rep=1, index=11): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+123.4156 	EXP 	msgFeedback: autoDraw = False
+123.4156 	EXP 	msgFeedback: autoDraw = False
+123.4156 	EXP 	stimuli: color = u'green (named)'
+123.4156 	EXP 	stimuli: text = u'green'
+123.4156 	EXP 	hint: autoDraw = True
+123.9255 	EXP 	stimuli: autoDraw = True
+125.1570 	DATA 	Keypress: down
+125.2118 	EXP 	stimuli: autoDraw = False
+125.2118 	EXP 	hint: autoDraw = False
+125.2118 	EXP 	msgFeedback: text = 'Correct! RT=1.232'
+125.2118 	EXP 	msgFeedback: autoDraw = True
+125.2237 	DATA 	Keypress: down
+126.7187 	EXP 	msgFeedback: autoDraw = False
+126.7187 	EXP 	msgFeedback: autoDraw = False
+126.7187 	EXP 	text: autoDraw = True
+131.4258 	DATA 	Keypress: space
+131.4810 	EXP 	Imported conditions.xlsx as conditions, 45 conditions, 4 params
+131.4816 	EXP 	Created sequence: random, trialTypes=45, nReps=4, seed=None
+131.4822 	EXP 	New trial (rep=0, index=0): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+131.4898 	EXP 	text: autoDraw = False
+131.4898 	EXP 	stimuli: color = u'green (named)'
+131.4898 	EXP 	stimuli: text = u'green'
+131.4898 	EXP 	hint: autoDraw = True
+132.0086 	EXP 	stimuli: autoDraw = True
+132.6262 	DATA 	Keypress: down
+132.6296 	EXP 	New trial (rep=0, index=1): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+132.6534 	EXP 	stimuli: autoDraw = False
+132.6534 	EXP 	hint: autoDraw = False
+132.6534 	EXP 	stimuli: color = u'red (named)'
+132.6534 	EXP 	stimuli: text = u'red'
+132.6534 	EXP 	hint: autoDraw = True
+133.1591 	EXP 	stimuli: autoDraw = True
+133.6926 	DATA 	Keypress: left
+133.6939 	EXP 	New trial (rep=0, index=2): OrderedDict([('word', u'blue'), ('color', u'red'), ('congruent', 0), ('corrAns', u'left')])
+133.7146 	EXP 	stimuli: autoDraw = False
+133.7146 	EXP 	hint: autoDraw = False
+133.7146 	EXP 	stimuli: color = u'red (named)'
+133.7146 	EXP 	stimuli: text = u'blue'
+133.7146 	EXP 	hint: autoDraw = True
+134.2262 	EXP 	stimuli: autoDraw = True
+134.8269 	DATA 	Keypress: left
+134.8282 	EXP 	New trial (rep=0, index=3): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+134.8431 	EXP 	stimuli: autoDraw = False
+134.8431 	EXP 	hint: autoDraw = False
+134.8431 	EXP 	stimuli: color = u'blue (named)'
+134.8431 	EXP 	stimuli: text = u'blue'
+134.8431 	EXP 	hint: autoDraw = True
+135.3597 	EXP 	stimuli: autoDraw = True
+135.8937 	DATA 	Keypress: right
+135.8950 	EXP 	New trial (rep=0, index=4): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+135.9182 	EXP 	stimuli: autoDraw = False
+135.9182 	EXP 	hint: autoDraw = False
+135.9182 	EXP 	stimuli: color = u'green (named)'
+135.9182 	EXP 	stimuli: text = u'green'
+135.9182 	EXP 	hint: autoDraw = True
+136.4266 	EXP 	stimuli: autoDraw = True
+136.8470 	DATA 	Keypress: down
+136.8636 	EXP 	New trial (rep=0, index=5): OrderedDict([('word', u'red'), ('color', u'green'), ('congruent', 0), ('corrAns', u'down')])
+136.9017 	EXP 	stimuli: autoDraw = False
+136.9017 	EXP 	hint: autoDraw = False
+136.9017 	EXP 	stimuli: color = u'green (named)'
+136.9017 	EXP 	stimuli: text = u'red'
+136.9017 	EXP 	hint: autoDraw = True
+137.3936 	EXP 	stimuli: autoDraw = True
+138.0778 	DATA 	Keypress: down
+138.0805 	EXP 	New trial (rep=0, index=6): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+138.0938 	EXP 	stimuli: autoDraw = False
+138.0938 	EXP 	hint: autoDraw = False
+138.0938 	EXP 	stimuli: color = u'red (named)'
+138.0938 	EXP 	stimuli: text = u'red'
+138.0938 	EXP 	hint: autoDraw = True
+138.6107 	EXP 	stimuli: autoDraw = True
+139.0476 	DATA 	Keypress: left
+139.0638 	EXP 	New trial (rep=0, index=7): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+139.0986 	EXP 	stimuli: autoDraw = False
+139.0986 	EXP 	hint: autoDraw = False
+139.0986 	EXP 	stimuli: color = u'blue (named)'
+139.0986 	EXP 	stimuli: text = u'blue'
+139.0986 	EXP 	hint: autoDraw = True
+139.5944 	EXP 	stimuli: autoDraw = True
+140.0641 	DATA 	Keypress: right
+140.0807 	EXP 	New trial (rep=0, index=8): OrderedDict([('word', u'green'), ('color', u'blue'), ('congruent', 0), ('corrAns', u'right')])
+140.1171 	EXP 	stimuli: autoDraw = False
+140.1171 	EXP 	hint: autoDraw = False
+140.1171 	EXP 	stimuli: color = u'blue (named)'
+140.1171 	EXP 	stimuli: text = u'green'
+140.1171 	EXP 	hint: autoDraw = True
+140.6113 	EXP 	stimuli: autoDraw = True
+141.1455 	DATA 	Keypress: right
+141.1482 	EXP 	New trial (rep=0, index=9): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+141.1613 	EXP 	stimuli: autoDraw = False
+141.1613 	EXP 	hint: autoDraw = False
+141.1613 	EXP 	stimuli: color = u'green (named)'
+141.1613 	EXP 	stimuli: text = u'green'
+141.1613 	EXP 	hint: autoDraw = True
+141.6783 	EXP 	stimuli: autoDraw = True
+142.2292 	DATA 	Keypress: left
+142.2319 	EXP 	New trial (rep=0, index=10): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+142.2682 	EXP 	stimuli: autoDraw = False
+142.2682 	EXP 	hint: autoDraw = False
+142.2682 	EXP 	stimuli: color = u'blue (named)'
+142.2682 	EXP 	stimuli: text = u'blue'
+142.2682 	EXP 	hint: autoDraw = True
+142.7618 	EXP 	stimuli: autoDraw = True
+143.3959 	DATA 	Keypress: right
+143.3983 	EXP 	New trial (rep=0, index=11): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+143.4121 	EXP 	stimuli: autoDraw = False
+143.4121 	EXP 	hint: autoDraw = False
+143.4121 	EXP 	stimuli: color = u'blue (named)'
+143.4121 	EXP 	stimuli: text = u'blue'
+143.4121 	EXP 	hint: autoDraw = True
+143.9289 	EXP 	stimuli: autoDraw = True
+144.4964 	DATA 	Keypress: right
+144.4981 	EXP 	New trial (rep=0, index=12): OrderedDict([('word', u'green'), ('color', u'red'), ('congruent', 0), ('corrAns', u'left')])
+144.5224 	EXP 	stimuli: autoDraw = False
+144.5224 	EXP 	hint: autoDraw = False
+144.5224 	EXP 	stimuli: color = u'red (named)'
+144.5224 	EXP 	stimuli: text = u'green'
+144.5224 	EXP 	hint: autoDraw = True
+145.0322 	EXP 	stimuli: autoDraw = True
+146.1980 	DATA 	Keypress: left
+146.2036 	EXP 	New trial (rep=0, index=13): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+146.2172 	EXP 	stimuli: autoDraw = False
+146.2172 	EXP 	hint: autoDraw = False
+146.2172 	EXP 	stimuli: color = u'green (named)'
+146.2172 	EXP 	stimuli: text = u'green'
+146.2172 	EXP 	hint: autoDraw = True
+146.7305 	EXP 	stimuli: autoDraw = True
+147.0807 	DATA 	Keypress: down
+147.0835 	EXP 	New trial (rep=0, index=14): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+147.0965 	EXP 	stimuli: autoDraw = False
+147.0965 	EXP 	hint: autoDraw = False
+147.0965 	EXP 	stimuli: color = u'green (named)'
+147.0965 	EXP 	stimuli: text = u'green'
+147.0965 	EXP 	hint: autoDraw = True
+147.6134 	EXP 	stimuli: autoDraw = True
+149.5481 	DATA 	Keypress: left
+149.5509 	EXP 	New trial (rep=0, index=15): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+149.5852 	EXP 	stimuli: autoDraw = False
+149.5852 	EXP 	hint: autoDraw = False
+149.5852 	EXP 	stimuli: color = u'red (named)'
+149.5852 	EXP 	stimuli: text = u'red'
+149.5852 	EXP 	hint: autoDraw = True
+150.0808 	EXP 	stimuli: autoDraw = True
+150.6484 	DATA 	Keypress: left
+150.6512 	EXP 	New trial (rep=0, index=16): OrderedDict([('word', u'green'), ('color', u'blue'), ('congruent', 0), ('corrAns', u'right')])
+150.6814 	EXP 	stimuli: autoDraw = False
+150.6814 	EXP 	hint: autoDraw = False
+150.6814 	EXP 	stimuli: color = u'blue (named)'
+150.6814 	EXP 	stimuli: text = u'green'
+150.6814 	EXP 	hint: autoDraw = True
+151.1812 	EXP 	stimuli: autoDraw = True
+151.7652 	DATA 	Keypress: right
+151.7676 	EXP 	New trial (rep=0, index=17): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+151.7997 	EXP 	stimuli: autoDraw = False
+151.7997 	EXP 	hint: autoDraw = False
+151.7997 	EXP 	stimuli: color = u'blue (named)'
+151.7997 	EXP 	stimuli: text = u'blue'
+151.7997 	EXP 	hint: autoDraw = True
+152.2981 	EXP 	stimuli: autoDraw = True
+152.6821 	DATA 	Keypress: left
+152.6845 	EXP 	New trial (rep=0, index=18): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+152.7168 	EXP 	stimuli: autoDraw = False
+152.7168 	EXP 	hint: autoDraw = False
+152.7168 	EXP 	stimuli: color = u'green (named)'
+152.7168 	EXP 	stimuli: text = u'green'
+152.7168 	EXP 	hint: autoDraw = True
+153.2150 	EXP 	stimuli: autoDraw = True
+153.9325 	DATA 	Keypress: down
+153.9349 	EXP 	New trial (rep=0, index=19): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+153.9654 	EXP 	stimuli: autoDraw = False
+153.9654 	EXP 	hint: autoDraw = False
+153.9654 	EXP 	stimuli: color = u'blue (named)'
+153.9654 	EXP 	stimuli: text = u'blue'
+153.9654 	EXP 	hint: autoDraw = True
+154.4654 	EXP 	stimuli: autoDraw = True
+155.0329 	DATA 	Keypress: right
+155.0353 	EXP 	New trial (rep=0, index=20): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+155.0761 	EXP 	stimuli: autoDraw = False
+155.0761 	EXP 	hint: autoDraw = False
+155.0761 	EXP 	stimuli: color = u'green (named)'
+155.0761 	EXP 	stimuli: text = u'green'
+155.0761 	EXP 	hint: autoDraw = True
+155.5658 	EXP 	stimuli: autoDraw = True
+156.2499 	DATA 	Keypress: down
+156.2523 	EXP 	New trial (rep=0, index=21): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+156.2788 	EXP 	stimuli: autoDraw = False
+156.2788 	EXP 	hint: autoDraw = False
+156.2788 	EXP 	stimuli: color = u'red (named)'
+156.2788 	EXP 	stimuli: text = u'red'
+156.2788 	EXP 	hint: autoDraw = True
+156.7829 	EXP 	stimuli: autoDraw = True
+157.2171 	DATA 	Keypress: left
+157.2199 	EXP 	New trial (rep=0, index=22): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+157.2330 	EXP 	stimuli: autoDraw = False
+157.2330 	EXP 	hint: autoDraw = False
+157.2330 	EXP 	stimuli: color = u'red (named)'
+157.2330 	EXP 	stimuli: text = u'red'
+157.2330 	EXP 	hint: autoDraw = True
+157.7499 	EXP 	stimuli: autoDraw = True
+158.3007 	DATA 	Keypress: left
+158.3036 	EXP 	New trial (rep=0, index=23): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+158.3167 	EXP 	stimuli: autoDraw = False
+158.3167 	EXP 	hint: autoDraw = False
+158.3167 	EXP 	stimuli: color = u'red (named)'
+158.3167 	EXP 	stimuli: text = u'red'
+158.3167 	EXP 	hint: autoDraw = True
+158.8336 	EXP 	stimuli: autoDraw = True
+159.2178 	DATA 	Keypress: left
+159.2205 	EXP 	New trial (rep=0, index=24): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+159.2336 	EXP 	stimuli: autoDraw = False
+159.2336 	EXP 	hint: autoDraw = False
+159.2336 	EXP 	stimuli: color = u'red (named)'
+159.2336 	EXP 	stimuli: text = u'red'
+159.2336 	EXP 	hint: autoDraw = True
+159.7505 	EXP 	stimuli: autoDraw = True
+160.0847 	DATA 	Keypress: left
+160.0874 	EXP 	New trial (rep=0, index=25): OrderedDict([('word', u'blue'), ('color', u'green'), ('congruent', 0), ('corrAns', u'down')])
+160.1207 	EXP 	stimuli: autoDraw = False
+160.1207 	EXP 	hint: autoDraw = False
+160.1207 	EXP 	stimuli: color = u'green (named)'
+160.1207 	EXP 	stimuli: text = u'blue'
+160.1207 	EXP 	hint: autoDraw = True
+160.6178 	EXP 	stimuli: autoDraw = True
+161.6019 	DATA 	Keypress: down
+161.6040 	EXP 	New trial (rep=0, index=26): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+161.6299 	EXP 	stimuli: autoDraw = False
+161.6299 	EXP 	hint: autoDraw = False
+161.6299 	EXP 	stimuli: color = u'green (named)'
+161.6299 	EXP 	stimuli: text = u'green'
+161.6299 	EXP 	hint: autoDraw = True
+162.1365 	EXP 	stimuli: autoDraw = True
+162.6021 	DATA 	Keypress: down
+162.6049 	EXP 	New trial (rep=0, index=27): OrderedDict([('word', u'red'), ('color', u'green'), ('congruent', 0), ('corrAns', u'down')])
+162.6298 	EXP 	stimuli: autoDraw = False
+162.6298 	EXP 	hint: autoDraw = False
+162.6298 	EXP 	stimuli: color = u'green (named)'
+162.6298 	EXP 	stimuli: text = u'red'
+162.6298 	EXP 	hint: autoDraw = True
+163.1347 	EXP 	stimuli: autoDraw = True
+163.5188 	DATA 	Keypress: down
+163.5212 	EXP 	New trial (rep=0, index=28): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+163.5349 	EXP 	stimuli: autoDraw = False
+163.5349 	EXP 	hint: autoDraw = False
+163.5349 	EXP 	stimuli: color = u'red (named)'
+163.5349 	EXP 	stimuli: text = u'red'
+163.5349 	EXP 	hint: autoDraw = True
+164.0517 	EXP 	stimuli: autoDraw = True
+164.6194 	DATA 	Keypress: left
+164.6207 	EXP 	New trial (rep=0, index=29): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+164.6409 	EXP 	stimuli: autoDraw = False
+164.6409 	EXP 	hint: autoDraw = False
+164.6409 	EXP 	stimuli: color = u'blue (named)'
+164.6409 	EXP 	stimuli: text = u'blue'
+164.6409 	EXP 	hint: autoDraw = True
+165.1521 	EXP 	stimuli: autoDraw = True
+165.7362 	DATA 	Keypress: right
+165.7385 	EXP 	New trial (rep=0, index=30): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+165.7667 	EXP 	stimuli: autoDraw = False
+165.7667 	EXP 	hint: autoDraw = False
+165.7667 	EXP 	stimuli: color = u'green (named)'
+165.7667 	EXP 	stimuli: text = u'green'
+165.7667 	EXP 	hint: autoDraw = True
+166.2692 	EXP 	stimuli: autoDraw = True
+167.1203 	DATA 	Keypress: down
+167.1230 	EXP 	New trial (rep=0, index=31): OrderedDict([('word', u'red'), ('color', u'blue'), ('congruent', 0), ('corrAns', u'right')])
+167.1505 	EXP 	stimuli: autoDraw = False
+167.1505 	EXP 	hint: autoDraw = False
+167.1505 	EXP 	stimuli: color = u'blue (named)'
+167.1505 	EXP 	stimuli: text = u'red'
+167.1505 	EXP 	hint: autoDraw = True
+167.6532 	EXP 	stimuli: autoDraw = True
+168.2551 	DATA 	Keypress: right
+168.2754 	EXP 	New trial (rep=0, index=32): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+168.3150 	EXP 	stimuli: autoDraw = False
+168.3150 	EXP 	hint: autoDraw = False
+168.3150 	EXP 	stimuli: color = u'blue (named)'
+168.3150 	EXP 	stimuli: text = u'blue'
+168.3150 	EXP 	hint: autoDraw = True
+168.8035 	EXP 	stimuli: autoDraw = True
+169.3042 	DATA 	Keypress: right
+169.3069 	EXP 	New trial (rep=0, index=33): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+169.3357 	EXP 	stimuli: autoDraw = False
+169.3357 	EXP 	hint: autoDraw = False
+169.3357 	EXP 	stimuli: color = u'red (named)'
+169.3357 	EXP 	stimuli: text = u'red'
+169.3357 	EXP 	hint: autoDraw = True
+169.8368 	EXP 	stimuli: autoDraw = True
+170.2209 	DATA 	Keypress: left
+170.2234 	EXP 	New trial (rep=0, index=34): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+170.2370 	EXP 	stimuli: autoDraw = False
+170.2370 	EXP 	hint: autoDraw = False
+170.2370 	EXP 	stimuli: color = u'red (named)'
+170.2370 	EXP 	stimuli: text = u'red'
+170.2370 	EXP 	hint: autoDraw = True
+170.7538 	EXP 	stimuli: autoDraw = True
+171.0712 	DATA 	Keypress: left
+171.0735 	EXP 	New trial (rep=0, index=35): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+171.0872 	EXP 	stimuli: autoDraw = False
+171.0872 	EXP 	hint: autoDraw = False
+171.0872 	EXP 	stimuli: color = u'red (named)'
+171.0872 	EXP 	stimuli: text = u'red'
+171.0872 	EXP 	hint: autoDraw = True
+171.6040 	EXP 	stimuli: autoDraw = True
+171.8881 	DATA 	Keypress: left
+171.8910 	EXP 	New trial (rep=0, index=36): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+171.9177 	EXP 	stimuli: autoDraw = False
+171.9177 	EXP 	hint: autoDraw = False
+171.9177 	EXP 	stimuli: color = u'blue (named)'
+171.9177 	EXP 	stimuli: text = u'blue'
+171.9177 	EXP 	hint: autoDraw = True
+172.4210 	EXP 	stimuli: autoDraw = True
+173.0384 	DATA 	Keypress: right
+173.0408 	EXP 	New trial (rep=0, index=37): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+173.0700 	EXP 	stimuli: autoDraw = False
+173.0700 	EXP 	hint: autoDraw = False
+173.0700 	EXP 	stimuli: color = u'red (named)'
+173.0700 	EXP 	stimuli: text = u'red'
+173.0700 	EXP 	hint: autoDraw = True
+173.5713 	EXP 	stimuli: autoDraw = True
+174.0723 	DATA 	Keypress: left
+174.0750 	EXP 	New trial (rep=0, index=38): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+174.1069 	EXP 	stimuli: autoDraw = False
+174.1069 	EXP 	hint: autoDraw = False
+174.1069 	EXP 	stimuli: color = u'green (named)'
+174.1069 	EXP 	stimuli: text = u'green'
+174.1069 	EXP 	hint: autoDraw = True
+174.6054 	EXP 	stimuli: autoDraw = True
+175.1904 	DATA 	Keypress: down
+175.1952 	EXP 	New trial (rep=0, index=39): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+175.2090 	EXP 	stimuli: autoDraw = False
+175.2090 	EXP 	hint: autoDraw = False
+175.2090 	EXP 	stimuli: color = u'green (named)'
+175.2090 	EXP 	stimuli: text = u'green'
+175.2090 	EXP 	hint: autoDraw = True
+175.7221 	EXP 	stimuli: autoDraw = True
+176.1397 	DATA 	Keypress: down
+176.1424 	EXP 	New trial (rep=0, index=40): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+176.1555 	EXP 	stimuli: autoDraw = False
+176.1555 	EXP 	hint: autoDraw = False
+176.1555 	EXP 	stimuli: color = u'green (named)'
+176.1555 	EXP 	stimuli: text = u'green'
+176.1555 	EXP 	hint: autoDraw = True
+176.6724 	EXP 	stimuli: autoDraw = True
+176.9588 	DATA 	Keypress: down
+176.9756 	EXP 	New trial (rep=0, index=41): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+177.0071 	EXP 	stimuli: autoDraw = False
+177.0071 	EXP 	hint: autoDraw = False
+177.0071 	EXP 	stimuli: color = u'blue (named)'
+177.0071 	EXP 	stimuli: text = u'blue'
+177.0071 	EXP 	hint: autoDraw = True
+177.5060 	EXP 	stimuli: autoDraw = True
+178.0070 	DATA 	Keypress: right
+178.0097 	EXP 	New trial (rep=0, index=42): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+178.0228 	EXP 	stimuli: autoDraw = False
+178.0228 	EXP 	hint: autoDraw = False
+178.0228 	EXP 	stimuli: color = u'blue (named)'
+178.0228 	EXP 	stimuli: text = u'blue'
+178.0228 	EXP 	hint: autoDraw = True
+178.5400 	EXP 	stimuli: autoDraw = True
+178.8403 	DATA 	Keypress: right
+178.8419 	EXP 	New trial (rep=0, index=43): OrderedDict([('word', u'blue'), ('color', u'red'), ('congruent', 0), ('corrAns', u'left')])
+178.8568 	EXP 	stimuli: autoDraw = False
+178.8568 	EXP 	hint: autoDraw = False
+178.8568 	EXP 	stimuli: color = u'red (named)'
+178.8568 	EXP 	stimuli: text = u'blue'
+178.8568 	EXP 	hint: autoDraw = True
+179.3734 	EXP 	stimuli: autoDraw = True
+179.7241 	DATA 	Keypress: left
+179.7256 	EXP 	New trial (rep=0, index=44): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+179.7404 	EXP 	stimuli: autoDraw = False
+179.7404 	EXP 	hint: autoDraw = False
+179.7404 	EXP 	stimuli: color = u'blue (named)'
+179.7404 	EXP 	stimuli: text = u'blue'
+179.7404 	EXP 	hint: autoDraw = True
+180.2572 	EXP 	stimuli: autoDraw = True
+180.6409 	DATA 	Keypress: left
+180.6424 	EXP 	New trial (rep=1, index=0): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+180.6687 	EXP 	stimuli: autoDraw = False
+180.6687 	EXP 	hint: autoDraw = False
+180.6687 	EXP 	stimuli: color = u'green (named)'
+180.6687 	EXP 	stimuli: text = u'green'
+180.6687 	EXP 	hint: autoDraw = True
+181.1737 	EXP 	stimuli: autoDraw = True
+181.7079 	DATA 	Keypress: left
+181.7104 	EXP 	New trial (rep=1, index=1): OrderedDict([('word', u'blue'), ('color', u'green'), ('congruent', 0), ('corrAns', u'down')])
+181.7422 	EXP 	stimuli: autoDraw = False
+181.7422 	EXP 	hint: autoDraw = False
+181.7422 	EXP 	stimuli: color = u'green (named)'
+181.7422 	EXP 	stimuli: text = u'blue'
+181.7422 	EXP 	hint: autoDraw = True
+181.9584 	DATA 	Keypress: down
+182.2407 	EXP 	stimuli: autoDraw = True
+182.7414 	DATA 	Keypress: down
+182.7438 	EXP 	New trial (rep=1, index=2): OrderedDict([('word', u'red'), ('color', u'green'), ('congruent', 0), ('corrAns', u'down')])
+182.7665 	EXP 	stimuli: autoDraw = False
+182.7665 	EXP 	hint: autoDraw = False
+182.7665 	EXP 	stimuli: color = u'green (named)'
+182.7665 	EXP 	stimuli: text = u'red'
+182.7665 	EXP 	hint: autoDraw = True
+183.2743 	EXP 	stimuli: autoDraw = True
+183.6250 	DATA 	Keypress: down
+183.6274 	EXP 	New trial (rep=1, index=3): OrderedDict([('word', u'green'), ('color', u'blue'), ('congruent', 0), ('corrAns', u'right')])
+183.6639 	EXP 	stimuli: autoDraw = False
+183.6639 	EXP 	hint: autoDraw = False
+183.6639 	EXP 	stimuli: color = u'blue (named)'
+183.6639 	EXP 	stimuli: text = u'green'
+183.6639 	EXP 	hint: autoDraw = True
+184.1581 	EXP 	stimuli: autoDraw = True
+184.6923 	DATA 	Keypress: right
+184.6950 	EXP 	New trial (rep=1, index=4): OrderedDict([('word', u'red'), ('color', u'blue'), ('congruent', 0), ('corrAns', u'right')])
+184.7209 	EXP 	stimuli: autoDraw = False
+184.7209 	EXP 	hint: autoDraw = False
+184.7209 	EXP 	stimuli: color = u'blue (named)'
+184.7209 	EXP 	stimuli: text = u'red'
+184.7209 	EXP 	hint: autoDraw = True
+185.2253 	EXP 	stimuli: autoDraw = True
+185.6267 	DATA 	Keypress: down
+185.6319 	EXP 	New trial (rep=1, index=5): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+185.6454 	EXP 	stimuli: autoDraw = False
+185.6454 	EXP 	hint: autoDraw = False
+185.6454 	EXP 	stimuli: color = u'red (named)'
+185.6454 	EXP 	stimuli: text = u'red'
+185.6454 	EXP 	hint: autoDraw = True
+186.1587 	EXP 	stimuli: autoDraw = True
+187.3439 	DATA 	Keypress: left
+187.3492 	EXP 	New trial (rep=1, index=6): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+187.3978 	EXP 	stimuli: autoDraw = False
+187.3978 	EXP 	hint: autoDraw = False
+187.3978 	EXP 	stimuli: color = u'green (named)'
+187.3978 	EXP 	stimuli: text = u'green'
+187.3978 	EXP 	hint: autoDraw = True
+187.8757 	EXP 	stimuli: autoDraw = True
+188.9267 	DATA 	Keypress: down
+188.9291 	EXP 	New trial (rep=1, index=7): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+188.9427 	EXP 	stimuli: autoDraw = False
+188.9427 	EXP 	hint: autoDraw = False
+188.9427 	EXP 	stimuli: color = u'green (named)'
+188.9427 	EXP 	stimuli: text = u'green'
+188.9427 	EXP 	hint: autoDraw = True
+189.4596 	EXP 	stimuli: autoDraw = True
+189.8790 	DATA 	Keypress: down
+189.8958 	EXP 	New trial (rep=1, index=8): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+189.9097 	EXP 	stimuli: autoDraw = False
+189.9097 	EXP 	hint: autoDraw = False
+189.9097 	EXP 	stimuli: color = u'green (named)'
+189.9097 	EXP 	stimuli: text = u'green'
+189.9097 	EXP 	hint: autoDraw = True
+190.4265 	EXP 	stimuli: autoDraw = True
+190.7772 	DATA 	Keypress: down
+190.7796 	EXP 	New trial (rep=1, index=9): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+190.8096 	EXP 	stimuli: autoDraw = False
+190.8096 	EXP 	hint: autoDraw = False
+190.8096 	EXP 	stimuli: color = u'blue (named)'
+190.8096 	EXP 	stimuli: text = u'blue'
+190.8096 	EXP 	hint: autoDraw = True
+191.3100 	EXP 	stimuli: autoDraw = True
+191.5941 	DATA 	Keypress: down
+191.5965 	EXP 	New trial (rep=1, index=10): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+191.6269 	EXP 	stimuli: autoDraw = False
+191.6269 	EXP 	hint: autoDraw = False
+191.6269 	EXP 	stimuli: color = u'green (named)'
+191.6269 	EXP 	stimuli: text = u'green'
+191.6269 	EXP 	hint: autoDraw = True
+192.1273 	EXP 	stimuli: autoDraw = True
+192.8614 	DATA 	Keypress: down
+192.8642 	EXP 	New trial (rep=1, index=11): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+192.8902 	EXP 	stimuli: autoDraw = False
+192.8902 	EXP 	hint: autoDraw = False
+192.8902 	EXP 	stimuli: color = u'blue (named)'
+192.8902 	EXP 	stimuli: text = u'blue'
+192.8902 	EXP 	hint: autoDraw = True
+193.3942 	EXP 	stimuli: autoDraw = True
+193.9784 	DATA 	Keypress: right
+193.9811 	EXP 	New trial (rep=1, index=12): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+194.0219 	EXP 	stimuli: autoDraw = False
+194.0219 	EXP 	hint: autoDraw = False
+194.0219 	EXP 	stimuli: color = u'green (named)'
+194.0219 	EXP 	stimuli: text = u'green'
+194.0219 	EXP 	hint: autoDraw = True
+194.5112 	EXP 	stimuli: autoDraw = True
+195.1122 	DATA 	Keypress: down
+195.1149 	EXP 	New trial (rep=1, index=13): OrderedDict([('word', u'blue'), ('color', u'red'), ('congruent', 0), ('corrAns', u'left')])
+195.1412 	EXP 	stimuli: autoDraw = False
+195.1412 	EXP 	hint: autoDraw = False
+195.1412 	EXP 	stimuli: color = u'red (named)'
+195.1412 	EXP 	stimuli: text = u'blue'
+195.1412 	EXP 	hint: autoDraw = True
+195.6450 	EXP 	stimuli: autoDraw = True
+196.2303 	DATA 	Keypress: left
+196.2469 	EXP 	New trial (rep=1, index=14): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+196.2619 	EXP 	stimuli: autoDraw = False
+196.2619 	EXP 	hint: autoDraw = False
+196.2619 	EXP 	stimuli: color = u'blue (named)'
+196.2619 	EXP 	stimuli: text = u'blue'
+196.2619 	EXP 	hint: autoDraw = True
+196.7791 	EXP 	stimuli: autoDraw = True
+197.3843 	DATA 	Keypress: right
+197.4009 	EXP 	New trial (rep=1, index=15): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+197.4463 	EXP 	stimuli: autoDraw = False
+197.4463 	EXP 	hint: autoDraw = False
+197.4463 	EXP 	stimuli: color = u'red (named)'
+197.4463 	EXP 	stimuli: text = u'red'
+197.4463 	EXP 	hint: autoDraw = True
+197.9290 	EXP 	stimuli: autoDraw = True
+198.3132 	DATA 	Keypress: down
+198.3147 	EXP 	New trial (rep=1, index=16): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+198.3294 	EXP 	stimuli: autoDraw = False
+198.3294 	EXP 	hint: autoDraw = False
+198.3294 	EXP 	stimuli: color = u'red (named)'
+198.3294 	EXP 	stimuli: text = u'red'
+198.3294 	EXP 	hint: autoDraw = True
+198.8461 	EXP 	stimuli: autoDraw = True
+199.5469 	DATA 	Keypress: left
+199.5484 	EXP 	New trial (rep=1, index=17): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+199.5717 	EXP 	stimuli: autoDraw = False
+199.5717 	EXP 	hint: autoDraw = False
+199.5717 	EXP 	stimuli: color = u'green (named)'
+199.5717 	EXP 	stimuli: text = u'green'
+199.5717 	EXP 	hint: autoDraw = True
+200.0800 	EXP 	stimuli: autoDraw = True
+200.5137 	DATA 	Keypress: right
+200.5154 	EXP 	New trial (rep=1, index=18): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+200.5349 	EXP 	stimuli: autoDraw = False
+200.5349 	EXP 	hint: autoDraw = False
+200.5349 	EXP 	stimuli: color = u'red (named)'
+200.5349 	EXP 	stimuli: text = u'red'
+200.5349 	EXP 	hint: autoDraw = True
+201.0465 	EXP 	stimuli: autoDraw = True
+201.6307 	DATA 	Keypress: left
+201.6322 	EXP 	New trial (rep=1, index=19): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+201.6544 	EXP 	stimuli: autoDraw = False
+201.6544 	EXP 	hint: autoDraw = False
+201.6544 	EXP 	stimuli: color = u'blue (named)'
+201.6544 	EXP 	stimuli: text = u'blue'
+201.6544 	EXP 	hint: autoDraw = True
+202.1634 	EXP 	stimuli: autoDraw = True
+202.7830 	DATA 	Keypress: right
+202.7996 	EXP 	New trial (rep=1, index=20): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+202.8137 	EXP 	stimuli: autoDraw = False
+202.8137 	EXP 	hint: autoDraw = False
+202.8137 	EXP 	stimuli: color = u'blue (named)'
+202.8137 	EXP 	stimuli: text = u'blue'
+202.8137 	EXP 	hint: autoDraw = True
+203.3306 	EXP 	stimuli: autoDraw = True
+204.3987 	DATA 	Keypress: left
+204.4178 	EXP 	New trial (rep=1, index=21): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+204.4311 	EXP 	stimuli: autoDraw = False
+204.4311 	EXP 	hint: autoDraw = False
+204.4311 	EXP 	stimuli: color = u'blue (named)'
+204.4311 	EXP 	stimuli: text = u'blue'
+204.4311 	EXP 	hint: autoDraw = True
+204.9480 	EXP 	stimuli: autoDraw = True
+205.4820 	DATA 	Keypress: left
+205.4849 	EXP 	New trial (rep=1, index=22): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+205.5069 	EXP 	stimuli: autoDraw = False
+205.5069 	EXP 	hint: autoDraw = False
+205.5069 	EXP 	stimuli: color = u'red (named)'
+205.5069 	EXP 	stimuli: text = u'red'
+205.5069 	EXP 	hint: autoDraw = True
+206.0147 	EXP 	stimuli: autoDraw = True
+208.2827 	DATA 	Keypress: left
+208.2851 	EXP 	New trial (rep=1, index=23): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+208.3173 	EXP 	stimuli: autoDraw = False
+208.3173 	EXP 	hint: autoDraw = False
+208.3173 	EXP 	stimuli: color = u'blue (named)'
+208.3173 	EXP 	stimuli: text = u'blue'
+208.3173 	EXP 	hint: autoDraw = True
+208.8155 	EXP 	stimuli: autoDraw = True
+209.2996 	DATA 	Keypress: right
+209.3020 	EXP 	New trial (rep=1, index=24): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+209.3157 	EXP 	stimuli: autoDraw = False
+209.3157 	EXP 	hint: autoDraw = False
+209.3157 	EXP 	stimuli: color = u'blue (named)'
+209.3157 	EXP 	stimuli: text = u'blue'
+209.3157 	EXP 	hint: autoDraw = True
+209.8325 	EXP 	stimuli: autoDraw = True
+210.1332 	DATA 	Keypress: right
+210.1355 	EXP 	New trial (rep=1, index=25): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+210.1632 	EXP 	stimuli: autoDraw = False
+210.1632 	EXP 	hint: autoDraw = False
+210.1632 	EXP 	stimuli: color = u'green (named)'
+210.1632 	EXP 	stimuli: text = u'green'
+210.1632 	EXP 	hint: autoDraw = True
+210.6663 	EXP 	stimuli: autoDraw = True
+211.2337 	DATA 	Keypress: down
+211.2365 	EXP 	New trial (rep=1, index=26): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+211.2662 	EXP 	stimuli: autoDraw = False
+211.2662 	EXP 	hint: autoDraw = False
+211.2662 	EXP 	stimuli: color = u'blue (named)'
+211.2662 	EXP 	stimuli: text = u'blue'
+211.2662 	EXP 	hint: autoDraw = True
+211.7665 	EXP 	stimuli: autoDraw = True
+212.5339 	DATA 	Keypress: right
+212.5365 	EXP 	New trial (rep=1, index=27): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+212.5662 	EXP 	stimuli: autoDraw = False
+212.5662 	EXP 	hint: autoDraw = False
+212.5662 	EXP 	stimuli: color = u'green (named)'
+212.5662 	EXP 	stimuli: text = u'green'
+212.5662 	EXP 	hint: autoDraw = True
+213.0669 	EXP 	stimuli: autoDraw = True
+214.2014 	DATA 	Keypress: down
+214.2041 	EXP 	New trial (rep=1, index=28): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+214.2293 	EXP 	stimuli: autoDraw = False
+214.2293 	EXP 	hint: autoDraw = False
+214.2293 	EXP 	stimuli: color = u'blue (named)'
+214.2293 	EXP 	stimuli: text = u'blue'
+214.2293 	EXP 	hint: autoDraw = True
+214.7342 	EXP 	stimuli: autoDraw = True
+215.3853 	DATA 	Keypress: down
+215.3885 	EXP 	New trial (rep=1, index=29): OrderedDict([('word', u'green'), ('color', u'red'), ('congruent', 0), ('corrAns', u'left')])
+215.4343 	EXP 	stimuli: autoDraw = False
+215.4343 	EXP 	hint: autoDraw = False
+215.4343 	EXP 	stimuli: color = u'red (named)'
+215.4343 	EXP 	stimuli: text = u'green'
+215.4343 	EXP 	hint: autoDraw = True
+215.9179 	EXP 	stimuli: autoDraw = True
+217.7522 	DATA 	Keypress: left
+217.7547 	EXP 	New trial (rep=1, index=30): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+217.7804 	EXP 	stimuli: autoDraw = False
+217.7804 	EXP 	hint: autoDraw = False
+217.7804 	EXP 	stimuli: color = u'red (named)'
+217.7804 	EXP 	stimuli: text = u'red'
+217.7804 	EXP 	hint: autoDraw = True
+218.2851 	EXP 	stimuli: autoDraw = True
+219.1193 	DATA 	Keypress: down
+219.1217 	EXP 	New trial (rep=1, index=31): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+219.1354 	EXP 	stimuli: autoDraw = False
+219.1354 	EXP 	hint: autoDraw = False
+219.1354 	EXP 	stimuli: color = u'red (named)'
+219.1354 	EXP 	stimuli: text = u'red'
+219.1354 	EXP 	hint: autoDraw = True
+219.6522 	EXP 	stimuli: autoDraw = True
+220.1363 	DATA 	Keypress: left
+220.1387 	EXP 	New trial (rep=1, index=32): OrderedDict([('word', u'green'), ('color', u'blue'), ('congruent', 0), ('corrAns', u'right')])
+220.1666 	EXP 	stimuli: autoDraw = False
+220.1666 	EXP 	hint: autoDraw = False
+220.1666 	EXP 	stimuli: color = u'blue (named)'
+220.1666 	EXP 	stimuli: text = u'green'
+220.1666 	EXP 	hint: autoDraw = True
+220.6692 	EXP 	stimuli: autoDraw = True
+221.4200 	DATA 	Keypress: right
+221.4224 	EXP 	New trial (rep=1, index=33): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+221.4537 	EXP 	stimuli: autoDraw = False
+221.4537 	EXP 	hint: autoDraw = False
+221.4537 	EXP 	stimuli: color = u'blue (named)'
+221.4537 	EXP 	stimuli: text = u'blue'
+221.4537 	EXP 	hint: autoDraw = True
+221.9556 	EXP 	stimuli: autoDraw = True
+222.5049 	DATA 	Keypress: right
+222.5096 	EXP 	New trial (rep=1, index=34): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+222.5231 	EXP 	stimuli: autoDraw = False
+222.5231 	EXP 	hint: autoDraw = False
+222.5231 	EXP 	stimuli: color = u'blue (named)'
+222.5231 	EXP 	stimuli: text = u'blue'
+222.5231 	EXP 	hint: autoDraw = True
+223.0371 	EXP 	stimuli: autoDraw = True
+223.4873 	DATA 	Keypress: right
+223.4897 	EXP 	New trial (rep=1, index=35): OrderedDict([('word', u'blue'), ('color', u'red'), ('congruent', 0), ('corrAns', u'left')])
+223.5034 	EXP 	stimuli: autoDraw = False
+223.5034 	EXP 	hint: autoDraw = False
+223.5034 	EXP 	stimuli: color = u'red (named)'
+223.5034 	EXP 	stimuli: text = u'blue'
+223.5034 	EXP 	hint: autoDraw = True
+224.0202 	EXP 	stimuli: autoDraw = True
+224.4710 	DATA 	Keypress: left
+224.4734 	EXP 	New trial (rep=1, index=36): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+224.4991 	EXP 	stimuli: autoDraw = False
+224.4991 	EXP 	hint: autoDraw = False
+224.4991 	EXP 	stimuli: color = u'green (named)'
+224.4991 	EXP 	stimuli: text = u'green'
+224.4991 	EXP 	hint: autoDraw = True
+225.0041 	EXP 	stimuli: autoDraw = True
+225.4214 	DATA 	Keypress: down
+225.4245 	EXP 	New trial (rep=1, index=37): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+225.4567 	EXP 	stimuli: autoDraw = False
+225.4567 	EXP 	hint: autoDraw = False
+225.4567 	EXP 	stimuli: color = u'red (named)'
+225.4567 	EXP 	stimuli: text = u'red'
+225.4567 	EXP 	hint: autoDraw = True
+225.9542 	EXP 	stimuli: autoDraw = True
+226.4552 	DATA 	Keypress: left
+226.4570 	EXP 	New trial (rep=1, index=38): OrderedDict([('word', u'red'), ('color', u'green'), ('congruent', 0), ('corrAns', u'down')])
+226.4714 	EXP 	stimuli: autoDraw = False
+226.4714 	EXP 	hint: autoDraw = False
+226.4714 	EXP 	stimuli: color = u'green (named)'
+226.4714 	EXP 	stimuli: text = u'red'
+226.4714 	EXP 	hint: autoDraw = True
+226.9882 	EXP 	stimuli: autoDraw = True
+227.8222 	DATA 	Keypress: down
+227.8240 	EXP 	New trial (rep=1, index=39): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+227.8385 	EXP 	stimuli: autoDraw = False
+227.8385 	EXP 	hint: autoDraw = False
+227.8385 	EXP 	stimuli: color = u'red (named)'
+227.8385 	EXP 	stimuli: text = u'red'
+227.8385 	EXP 	hint: autoDraw = True
+228.3552 	EXP 	stimuli: autoDraw = True
+229.1059 	DATA 	Keypress: left
+229.1077 	EXP 	New trial (rep=1, index=40): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+229.1370 	EXP 	stimuli: autoDraw = False
+229.1370 	EXP 	hint: autoDraw = False
+229.1370 	EXP 	stimuli: color = u'green (named)'
+229.1370 	EXP 	stimuli: text = u'green'
+229.1370 	EXP 	hint: autoDraw = True
+229.6386 	EXP 	stimuli: autoDraw = True
+230.4228 	DATA 	Keypress: down
+230.4252 	EXP 	New trial (rep=1, index=41): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+230.4491 	EXP 	stimuli: autoDraw = False
+230.4491 	EXP 	hint: autoDraw = False
+230.4491 	EXP 	stimuli: color = u'red (named)'
+230.4491 	EXP 	stimuli: text = u'red'
+230.4491 	EXP 	hint: autoDraw = True
+230.9558 	EXP 	stimuli: autoDraw = True
+231.4901 	DATA 	Keypress: left
+231.4928 	EXP 	New trial (rep=1, index=42): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+231.5059 	EXP 	stimuli: autoDraw = False
+231.5059 	EXP 	hint: autoDraw = False
+231.5059 	EXP 	stimuli: color = u'red (named)'
+231.5059 	EXP 	stimuli: text = u'red'
+231.5059 	EXP 	hint: autoDraw = True
+232.0228 	EXP 	stimuli: autoDraw = True
+232.7571 	DATA 	Keypress: left
+232.7598 	EXP 	New trial (rep=1, index=43): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+232.7895 	EXP 	stimuli: autoDraw = False
+232.7895 	EXP 	hint: autoDraw = False
+232.7895 	EXP 	stimuli: color = u'green (named)'
+232.7895 	EXP 	stimuli: text = u'green'
+232.7895 	EXP 	hint: autoDraw = True
+233.2925 	EXP 	stimuli: autoDraw = True
+234.1129 	DATA 	Keypress: down
+234.1295 	EXP 	New trial (rep=1, index=44): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+234.1863 	EXP 	stimuli: autoDraw = False
+234.1863 	EXP 	hint: autoDraw = False
+234.1863 	EXP 	stimuli: color = u'red (named)'
+234.1863 	EXP 	stimuli: text = u'red'
+234.1863 	EXP 	hint: autoDraw = True
+234.6569 	EXP 	stimuli: autoDraw = True
+235.3607 	DATA 	Keypress: left
+235.3772 	EXP 	New trial (rep=2, index=0): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+235.4148 	EXP 	stimuli: autoDraw = False
+235.4148 	EXP 	hint: autoDraw = False
+235.4148 	EXP 	stimuli: color = u'green (named)'
+235.4148 	EXP 	stimuli: text = u'green'
+235.4148 	EXP 	hint: autoDraw = True
+235.9072 	EXP 	stimuli: autoDraw = True
+236.3747 	DATA 	Keypress: down
+236.3771 	EXP 	New trial (rep=2, index=1): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+236.3907 	EXP 	stimuli: autoDraw = False
+236.3907 	EXP 	hint: autoDraw = False
+236.3907 	EXP 	stimuli: color = u'green (named)'
+236.3907 	EXP 	stimuli: text = u'green'
+236.3907 	EXP 	hint: autoDraw = True
+236.9076 	EXP 	stimuli: autoDraw = True
+237.4417 	DATA 	Keypress: down
+237.4441 	EXP 	New trial (rep=2, index=2): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+237.4577 	EXP 	stimuli: autoDraw = False
+237.4577 	EXP 	hint: autoDraw = False
+237.4577 	EXP 	stimuli: color = u'green (named)'
+237.4577 	EXP 	stimuli: text = u'green'
+237.4577 	EXP 	hint: autoDraw = True
+237.9745 	EXP 	stimuli: autoDraw = True
+238.3418 	DATA 	Keypress: down
+238.3442 	EXP 	New trial (rep=2, index=3): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+238.3771 	EXP 	stimuli: autoDraw = False
+238.3771 	EXP 	hint: autoDraw = False
+238.3771 	EXP 	stimuli: color = u'blue (named)'
+238.3771 	EXP 	stimuli: text = u'blue'
+238.3771 	EXP 	hint: autoDraw = True
+238.8750 	EXP 	stimuli: autoDraw = True
+239.4626 	DATA 	Keypress: right
+239.4783 	EXP 	New trial (rep=2, index=4): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+239.5040 	EXP 	stimuli: autoDraw = False
+239.5040 	EXP 	hint: autoDraw = False
+239.5040 	EXP 	stimuli: color = u'red (named)'
+239.5040 	EXP 	stimuli: text = u'red'
+239.5040 	EXP 	hint: autoDraw = True
+240.0091 	EXP 	stimuli: autoDraw = True
+240.5593 	DATA 	Keypress: left
+240.5617 	EXP 	New trial (rep=2, index=5): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+240.5906 	EXP 	stimuli: autoDraw = False
+240.5906 	EXP 	hint: autoDraw = False
+240.5906 	EXP 	stimuli: color = u'green (named)'
+240.5906 	EXP 	stimuli: text = u'green'
+240.5906 	EXP 	hint: autoDraw = True
+241.0923 	EXP 	stimuli: autoDraw = True
+241.8955 	DATA 	Keypress: down
+241.9123 	EXP 	New trial (rep=2, index=6): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+241.9258 	EXP 	stimuli: autoDraw = False
+241.9258 	EXP 	hint: autoDraw = False
+241.9258 	EXP 	stimuli: color = u'green (named)'
+241.9258 	EXP 	stimuli: text = u'green'
+241.9258 	EXP 	hint: autoDraw = True
+242.4427 	EXP 	stimuli: autoDraw = True
+242.7936 	DATA 	Keypress: down
+242.7963 	EXP 	New trial (rep=2, index=7): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+242.8094 	EXP 	stimuli: autoDraw = False
+242.8094 	EXP 	hint: autoDraw = False
+242.8094 	EXP 	stimuli: color = u'green (named)'
+242.8094 	EXP 	stimuli: text = u'green'
+242.8094 	EXP 	hint: autoDraw = True
+243.3263 	EXP 	stimuli: autoDraw = True
+243.6105 	DATA 	Keypress: down
+243.6132 	EXP 	New trial (rep=2, index=8): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+243.6422 	EXP 	stimuli: autoDraw = False
+243.6422 	EXP 	hint: autoDraw = False
+243.6422 	EXP 	stimuli: color = u'red (named)'
+243.6422 	EXP 	stimuli: text = u'red'
+243.6422 	EXP 	hint: autoDraw = True
+244.1433 	EXP 	stimuli: autoDraw = True
+244.7607 	DATA 	Keypress: left
+244.7631 	EXP 	New trial (rep=2, index=9): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+244.7880 	EXP 	stimuli: autoDraw = False
+244.7880 	EXP 	hint: autoDraw = False
+244.7880 	EXP 	stimuli: color = u'blue (named)'
+244.7880 	EXP 	stimuli: text = u'blue'
+244.7880 	EXP 	hint: autoDraw = True
+245.2937 	EXP 	stimuli: autoDraw = True
+246.0610 	DATA 	Keypress: right
+246.0624 	EXP 	New trial (rep=2, index=10): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+246.0820 	EXP 	stimuli: autoDraw = False
+246.0820 	EXP 	hint: autoDraw = False
+246.0820 	EXP 	stimuli: color = u'red (named)'
+246.0820 	EXP 	stimuli: text = u'red'
+246.0820 	EXP 	hint: autoDraw = True
+246.5938 	EXP 	stimuli: autoDraw = True
+247.6281 	DATA 	Keypress: left
+247.6305 	EXP 	New trial (rep=2, index=11): OrderedDict([('word', u'red'), ('color', u'green'), ('congruent', 0), ('corrAns', u'down')])
+247.6442 	EXP 	stimuli: autoDraw = False
+247.6442 	EXP 	hint: autoDraw = False
+247.6442 	EXP 	stimuli: color = u'green (named)'
+247.6442 	EXP 	stimuli: text = u'red'
+247.6442 	EXP 	hint: autoDraw = True
+248.1614 	EXP 	stimuli: autoDraw = True
+248.8621 	DATA 	Keypress: down
+248.8648 	EXP 	New trial (rep=2, index=12): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+248.8782 	EXP 	stimuli: autoDraw = False
+248.8782 	EXP 	hint: autoDraw = False
+248.8782 	EXP 	stimuli: color = u'red (named)'
+248.8782 	EXP 	stimuli: text = u'red'
+248.8782 	EXP 	hint: autoDraw = True
+249.3949 	EXP 	stimuli: autoDraw = True
+250.0792 	DATA 	Keypress: left
+250.0819 	EXP 	New trial (rep=2, index=13): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+250.1230 	EXP 	stimuli: autoDraw = False
+250.1230 	EXP 	hint: autoDraw = False
+250.1230 	EXP 	stimuli: color = u'green (named)'
+250.1230 	EXP 	stimuli: text = u'green'
+250.1230 	EXP 	hint: autoDraw = True
+250.6117 	EXP 	stimuli: autoDraw = True
+251.1630 	DATA 	Keypress: down
+251.1653 	EXP 	New trial (rep=2, index=14): OrderedDict([('word', u'blue'), ('color', u'green'), ('congruent', 0), ('corrAns', u'down')])
+251.1969 	EXP 	stimuli: autoDraw = False
+251.1969 	EXP 	hint: autoDraw = False
+251.1969 	EXP 	stimuli: color = u'green (named)'
+251.1969 	EXP 	stimuli: text = u'blue'
+251.1969 	EXP 	hint: autoDraw = True
+251.6955 	EXP 	stimuli: autoDraw = True
+252.0795 	DATA 	Keypress: down
+252.0819 	EXP 	New trial (rep=2, index=15): OrderedDict([('word', u'red'), ('color', u'blue'), ('congruent', 0), ('corrAns', u'right')])
+252.1065 	EXP 	stimuli: autoDraw = False
+252.1065 	EXP 	hint: autoDraw = False
+252.1065 	EXP 	stimuli: color = u'blue (named)'
+252.1065 	EXP 	stimuli: text = u'red'
+252.1065 	EXP 	hint: autoDraw = True
+252.6128 	EXP 	stimuli: autoDraw = True
+253.7633 	DATA 	Keypress: right
+253.7649 	EXP 	New trial (rep=2, index=16): OrderedDict([('word', u'green'), ('color', u'blue'), ('congruent', 0), ('corrAns', u'right')])
+253.7885 	EXP 	stimuli: autoDraw = False
+253.7885 	EXP 	hint: autoDraw = False
+253.7885 	EXP 	stimuli: color = u'blue (named)'
+253.7885 	EXP 	stimuli: text = u'green'
+253.7885 	EXP 	hint: autoDraw = True
+254.2964 	EXP 	stimuli: autoDraw = True
+254.8473 	DATA 	Keypress: right
+254.8500 	EXP 	New trial (rep=2, index=17): OrderedDict([('word', u'blue'), ('color', u'red'), ('congruent', 0), ('corrAns', u'left')])
+254.8757 	EXP 	stimuli: autoDraw = False
+254.8757 	EXP 	hint: autoDraw = False
+254.8757 	EXP 	stimuli: color = u'red (named)'
+254.8757 	EXP 	stimuli: text = u'blue'
+254.8757 	EXP 	hint: autoDraw = True
+255.3802 	EXP 	stimuli: autoDraw = True
+256.4810 	DATA 	Keypress: left
+256.4825 	EXP 	New trial (rep=2, index=18): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+256.5035 	EXP 	stimuli: autoDraw = False
+256.5035 	EXP 	hint: autoDraw = False
+256.5035 	EXP 	stimuli: color = u'red (named)'
+256.5035 	EXP 	stimuli: text = u'red'
+256.5035 	EXP 	hint: autoDraw = True
+257.0138 	EXP 	stimuli: autoDraw = True
+257.4812 	DATA 	Keypress: left
+257.4838 	EXP 	New trial (rep=2, index=19): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+257.4972 	EXP 	stimuli: autoDraw = False
+257.4972 	EXP 	hint: autoDraw = False
+257.4972 	EXP 	stimuli: color = u'red (named)'
+257.4972 	EXP 	stimuli: text = u'red'
+257.4972 	EXP 	hint: autoDraw = True
+258.0141 	EXP 	stimuli: autoDraw = True
+258.4648 	DATA 	Keypress: left
+258.4671 	EXP 	New trial (rep=2, index=20): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+258.4944 	EXP 	stimuli: autoDraw = False
+258.4944 	EXP 	hint: autoDraw = False
+258.4944 	EXP 	stimuli: color = u'blue (named)'
+258.4944 	EXP 	stimuli: text = u'blue'
+258.4944 	EXP 	hint: autoDraw = True
+258.9980 	EXP 	stimuli: autoDraw = True
+259.4819 	DATA 	Keypress: down
+259.4833 	EXP 	New trial (rep=2, index=21): OrderedDict([('word', u'blue'), ('color', u'red'), ('congruent', 0), ('corrAns', u'left')])
+259.4982 	EXP 	stimuli: autoDraw = False
+259.4982 	EXP 	hint: autoDraw = False
+259.4982 	EXP 	stimuli: color = u'red (named)'
+259.4982 	EXP 	stimuli: text = u'blue'
+259.4982 	EXP 	hint: autoDraw = True
+260.0147 	EXP 	stimuli: autoDraw = True
+260.8989 	DATA 	Keypress: left
+260.9013 	EXP 	New trial (rep=2, index=22): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+260.9233 	EXP 	stimuli: autoDraw = False
+260.9233 	EXP 	hint: autoDraw = False
+260.9233 	EXP 	stimuli: color = u'red (named)'
+260.9233 	EXP 	stimuli: text = u'red'
+260.9233 	EXP 	hint: autoDraw = True
+261.4319 	EXP 	stimuli: autoDraw = True
+261.9185 	DATA 	Keypress: left
+261.9350 	EXP 	New trial (rep=2, index=23): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+261.9704 	EXP 	stimuli: autoDraw = False
+261.9704 	EXP 	hint: autoDraw = False
+261.9704 	EXP 	stimuli: color = u'blue (named)'
+261.9704 	EXP 	stimuli: text = u'blue'
+261.9704 	EXP 	hint: autoDraw = True
+262.4674 	EXP 	stimuli: autoDraw = True
+262.9830 	DATA 	Keypress: right
+262.9854 	EXP 	New trial (rep=2, index=24): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+262.9989 	EXP 	stimuli: autoDraw = False
+262.9989 	EXP 	hint: autoDraw = False
+262.9989 	EXP 	stimuli: color = u'blue (named)'
+262.9989 	EXP 	stimuli: text = u'blue'
+262.9989 	EXP 	hint: autoDraw = True
+263.5158 	EXP 	stimuli: autoDraw = True
+263.9166 	DATA 	Keypress: right
+263.9190 	EXP 	New trial (rep=2, index=25): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+263.9449 	EXP 	stimuli: autoDraw = False
+263.9449 	EXP 	hint: autoDraw = False
+263.9449 	EXP 	stimuli: color = u'red (named)'
+263.9449 	EXP 	stimuli: text = u'red'
+263.9449 	EXP 	hint: autoDraw = True
+264.4495 	EXP 	stimuli: autoDraw = True
+265.0004 	DATA 	Keypress: left
+265.0032 	EXP 	New trial (rep=2, index=26): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+265.0394 	EXP 	stimuli: autoDraw = False
+265.0394 	EXP 	hint: autoDraw = False
+265.0394 	EXP 	stimuli: color = u'green (named)'
+265.0394 	EXP 	stimuli: text = u'green'
+265.0394 	EXP 	hint: autoDraw = True
+265.5332 	EXP 	stimuli: autoDraw = True
+266.1036 	DATA 	Keypress: down
+266.1202 	EXP 	New trial (rep=2, index=27): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+266.1516 	EXP 	stimuli: autoDraw = False
+266.1516 	EXP 	hint: autoDraw = False
+266.1516 	EXP 	stimuli: color = u'blue (named)'
+266.1516 	EXP 	stimuli: text = u'blue'
+266.1516 	EXP 	hint: autoDraw = True
+266.6501 	EXP 	stimuli: autoDraw = True
+267.0675 	DATA 	Keypress: left
+267.0699 	EXP 	New trial (rep=2, index=28): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+267.0992 	EXP 	stimuli: autoDraw = False
+267.0992 	EXP 	hint: autoDraw = False
+267.0992 	EXP 	stimuli: color = u'red (named)'
+267.0992 	EXP 	stimuli: text = u'red'
+267.0992 	EXP 	hint: autoDraw = True
+267.6004 	EXP 	stimuli: autoDraw = True
+267.9847 	DATA 	Keypress: left
+267.9874 	EXP 	New trial (rep=2, index=29): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+268.0175 	EXP 	stimuli: autoDraw = False
+268.0175 	EXP 	hint: autoDraw = False
+268.0175 	EXP 	stimuli: color = u'green (named)'
+268.0175 	EXP 	stimuli: text = u'green'
+268.0175 	EXP 	hint: autoDraw = True
+268.5174 	EXP 	stimuli: autoDraw = True
+269.0684 	DATA 	Keypress: down
+269.0715 	EXP 	New trial (rep=2, index=30): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+269.1063 	EXP 	stimuli: autoDraw = False
+269.1063 	EXP 	hint: autoDraw = False
+269.1063 	EXP 	stimuli: color = u'blue (named)'
+269.1063 	EXP 	stimuli: text = u'blue'
+269.1063 	EXP 	hint: autoDraw = True
+269.6011 	EXP 	stimuli: autoDraw = True
+270.6189 	DATA 	Keypress: right
+270.6216 	EXP 	New trial (rep=2, index=31): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+270.6347 	EXP 	stimuli: autoDraw = False
+270.6347 	EXP 	hint: autoDraw = False
+270.6347 	EXP 	stimuli: color = u'blue (named)'
+270.6347 	EXP 	stimuli: text = u'blue'
+270.6347 	EXP 	hint: autoDraw = True
+271.1516 	EXP 	stimuli: autoDraw = True
+271.9192 	DATA 	Keypress: right
+271.9219 	EXP 	New trial (rep=2, index=32): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+271.9514 	EXP 	stimuli: autoDraw = False
+271.9514 	EXP 	hint: autoDraw = False
+271.9514 	EXP 	stimuli: color = u'green (named)'
+271.9514 	EXP 	stimuli: text = u'green'
+271.9514 	EXP 	hint: autoDraw = True
+272.4519 	EXP 	stimuli: autoDraw = True
+273.1860 	DATA 	Keypress: left
+273.1884 	EXP 	New trial (rep=2, index=33): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+273.2179 	EXP 	stimuli: autoDraw = False
+273.2179 	EXP 	hint: autoDraw = False
+273.2179 	EXP 	stimuli: color = u'blue (named)'
+273.2179 	EXP 	stimuli: text = u'blue'
+273.2179 	EXP 	hint: autoDraw = True
+273.7189 	EXP 	stimuli: autoDraw = True
+274.3864 	DATA 	Keypress: right
+274.3888 	EXP 	New trial (rep=2, index=34): OrderedDict([('word', u'red'), ('color', u'green'), ('congruent', 0), ('corrAns', u'down')])
+274.4187 	EXP 	stimuli: autoDraw = False
+274.4187 	EXP 	hint: autoDraw = False
+274.4187 	EXP 	stimuli: color = u'green (named)'
+274.4187 	EXP 	stimuli: text = u'red'
+274.4187 	EXP 	hint: autoDraw = True
+274.9193 	EXP 	stimuli: autoDraw = True
+275.2700 	DATA 	Keypress: down
+275.2727 	EXP 	New trial (rep=2, index=35): OrderedDict([('word', u'green'), ('color', u'red'), ('congruent', 0), ('corrAns', u'left')])
+275.3092 	EXP 	stimuli: autoDraw = False
+275.3092 	EXP 	hint: autoDraw = False
+275.3092 	EXP 	stimuli: color = u'red (named)'
+275.3092 	EXP 	stimuli: text = u'green'
+275.3092 	EXP 	hint: autoDraw = True
+275.8033 	EXP 	stimuli: autoDraw = True
+276.2382 	DATA 	Keypress: left
+276.2548 	EXP 	New trial (rep=2, index=36): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+276.2700 	EXP 	stimuli: autoDraw = False
+276.2700 	EXP 	hint: autoDraw = False
+276.2700 	EXP 	stimuli: color = u'green (named)'
+276.2700 	EXP 	stimuli: text = u'green'
+276.2700 	EXP 	hint: autoDraw = True
+276.7868 	EXP 	stimuli: autoDraw = True
+277.1706 	DATA 	Keypress: down
+277.1720 	EXP 	New trial (rep=2, index=37): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+277.1869 	EXP 	stimuli: autoDraw = False
+277.1869 	EXP 	hint: autoDraw = False
+277.1869 	EXP 	stimuli: color = u'green (named)'
+277.1869 	EXP 	stimuli: text = u'green'
+277.1869 	EXP 	hint: autoDraw = True
+277.7038 	EXP 	stimuli: autoDraw = True
+278.0042 	DATA 	Keypress: down
+278.0055 	EXP 	New trial (rep=2, index=38): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+278.0256 	EXP 	stimuli: autoDraw = False
+278.0256 	EXP 	hint: autoDraw = False
+278.0256 	EXP 	stimuli: color = u'blue (named)'
+278.0256 	EXP 	stimuli: text = u'blue'
+278.0256 	EXP 	hint: autoDraw = True
+278.5376 	EXP 	stimuli: autoDraw = True
+279.1050 	DATA 	Keypress: right
+279.1071 	EXP 	New trial (rep=2, index=39): OrderedDict([('word', u'green'), ('color', u'blue'), ('congruent', 0), ('corrAns', u'right')])
+279.1303 	EXP 	stimuli: autoDraw = False
+279.1303 	EXP 	hint: autoDraw = False
+279.1303 	EXP 	stimuli: color = u'blue (named)'
+279.1303 	EXP 	stimuli: text = u'green'
+279.1303 	EXP 	hint: autoDraw = True
+279.6375 	EXP 	stimuli: autoDraw = True
+280.2552 	DATA 	Keypress: right
+280.2584 	EXP 	New trial (rep=2, index=40): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+280.2936 	EXP 	stimuli: autoDraw = False
+280.2936 	EXP 	hint: autoDraw = False
+280.2936 	EXP 	stimuli: color = u'blue (named)'
+280.2936 	EXP 	stimuli: text = u'blue'
+280.2936 	EXP 	hint: autoDraw = True
+280.7881 	EXP 	stimuli: autoDraw = True
+281.1887 	DATA 	Keypress: right
+281.1902 	EXP 	New trial (rep=2, index=41): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+281.2050 	EXP 	stimuli: autoDraw = False
+281.2050 	EXP 	hint: autoDraw = False
+281.2050 	EXP 	stimuli: color = u'blue (named)'
+281.2050 	EXP 	stimuli: text = u'blue'
+281.2050 	EXP 	hint: autoDraw = True
+281.7218 	EXP 	stimuli: autoDraw = True
+282.0221 	DATA 	Keypress: right
+282.0245 	EXP 	New trial (rep=2, index=42): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+282.0479 	EXP 	stimuli: autoDraw = False
+282.0479 	EXP 	hint: autoDraw = False
+282.0479 	EXP 	stimuli: color = u'red (named)'
+282.0479 	EXP 	stimuli: text = u'red'
+282.0479 	EXP 	hint: autoDraw = True
+282.5551 	EXP 	stimuli: autoDraw = True
+283.0894 	DATA 	Keypress: left
+283.0921 	EXP 	New trial (rep=2, index=43): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+283.1052 	EXP 	stimuli: autoDraw = False
+283.1052 	EXP 	hint: autoDraw = False
+283.1052 	EXP 	stimuli: color = u'red (named)'
+283.1052 	EXP 	stimuli: text = u'red'
+283.1052 	EXP 	hint: autoDraw = True
+283.6221 	EXP 	stimuli: autoDraw = True
+283.9397 	DATA 	Keypress: left
+283.9424 	EXP 	New trial (rep=2, index=44): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+283.9555 	EXP 	stimuli: autoDraw = False
+283.9555 	EXP 	hint: autoDraw = False
+283.9555 	EXP 	stimuli: color = u'red (named)'
+283.9555 	EXP 	stimuli: text = u'red'
+283.9555 	EXP 	hint: autoDraw = True
+284.4725 	EXP 	stimuli: autoDraw = True
+284.7898 	DATA 	Keypress: left
+284.7926 	EXP 	New trial (rep=3, index=0): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+284.8057 	EXP 	stimuli: autoDraw = False
+284.8057 	EXP 	hint: autoDraw = False
+284.8057 	EXP 	stimuli: color = u'red (named)'
+284.8057 	EXP 	stimuli: text = u'red'
+284.8057 	EXP 	hint: autoDraw = True
+285.3226 	EXP 	stimuli: autoDraw = True
+285.6235 	DATA 	Keypress: left
+285.6269 	EXP 	New trial (rep=3, index=1): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+285.6646 	EXP 	stimuli: autoDraw = False
+285.6646 	EXP 	hint: autoDraw = False
+285.6646 	EXP 	stimuli: color = u'green (named)'
+285.6646 	EXP 	stimuli: text = u'green'
+285.6646 	EXP 	hint: autoDraw = True
+286.1561 	EXP 	stimuli: autoDraw = True
+286.8403 	DATA 	Keypress: down
+286.8427 	EXP 	New trial (rep=3, index=2): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+286.8693 	EXP 	stimuli: autoDraw = False
+286.8693 	EXP 	hint: autoDraw = False
+286.8693 	EXP 	stimuli: color = u'red (named)'
+286.8693 	EXP 	stimuli: text = u'red'
+286.8693 	EXP 	hint: autoDraw = True
+287.3734 	EXP 	stimuli: autoDraw = True
+288.0070 	DATA 	Keypress: right
+288.0083 	EXP 	New trial (rep=3, index=3): OrderedDict([('word', u'red'), ('color', u'blue'), ('congruent', 0), ('corrAns', u'right')])
+288.0236 	EXP 	stimuli: autoDraw = False
+288.0236 	EXP 	hint: autoDraw = False
+288.0236 	EXP 	stimuli: color = u'blue (named)'
+288.0236 	EXP 	stimuli: text = u'red'
+288.0236 	EXP 	hint: autoDraw = True
+288.5403 	EXP 	stimuli: autoDraw = True
+288.9246 	DATA 	Keypress: right
+288.9273 	EXP 	New trial (rep=3, index=4): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+288.9534 	EXP 	stimuli: autoDraw = False
+288.9534 	EXP 	hint: autoDraw = False
+288.9534 	EXP 	stimuli: color = u'blue (named)'
+288.9534 	EXP 	stimuli: text = u'blue'
+288.9534 	EXP 	hint: autoDraw = True
+289.4573 	EXP 	stimuli: autoDraw = True
+289.7914 	DATA 	Keypress: right
+289.7942 	EXP 	New trial (rep=3, index=5): OrderedDict([('word', u'blue'), ('color', u'green'), ('congruent', 0), ('corrAns', u'down')])
+289.8072 	EXP 	stimuli: autoDraw = False
+289.8072 	EXP 	hint: autoDraw = False
+289.8072 	EXP 	stimuli: color = u'green (named)'
+289.8072 	EXP 	stimuli: text = u'blue'
+289.8072 	EXP 	hint: autoDraw = True
+290.3242 	EXP 	stimuli: autoDraw = True
+291.1593 	DATA 	Keypress: down
+291.1641 	EXP 	New trial (rep=3, index=6): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+291.2118 	EXP 	stimuli: autoDraw = False
+291.2118 	EXP 	hint: autoDraw = False
+291.2118 	EXP 	stimuli: color = u'green (named)'
+291.2118 	EXP 	stimuli: text = u'green'
+291.2118 	EXP 	hint: autoDraw = True
+291.6914 	EXP 	stimuli: autoDraw = True
+292.1087 	DATA 	Keypress: down
+292.1099 	EXP 	New trial (rep=3, index=7): OrderedDict([('word', u'blue'), ('color', u'red'), ('congruent', 0), ('corrAns', u'left')])
+292.1292 	EXP 	stimuli: autoDraw = False
+292.1292 	EXP 	hint: autoDraw = False
+292.1292 	EXP 	stimuli: color = u'red (named)'
+292.1292 	EXP 	stimuli: text = u'blue'
+292.1292 	EXP 	hint: autoDraw = True
+292.6414 	EXP 	stimuli: autoDraw = True
+293.4258 	DATA 	Keypress: left
+293.4273 	EXP 	New trial (rep=3, index=8): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+293.4526 	EXP 	stimuli: autoDraw = False
+293.4526 	EXP 	hint: autoDraw = False
+293.4526 	EXP 	stimuli: color = u'green (named)'
+293.4526 	EXP 	stimuli: text = u'green'
+293.4526 	EXP 	hint: autoDraw = True
+293.9586 	EXP 	stimuli: autoDraw = True
+296.4932 	DATA 	Keypress: down
+296.4956 	EXP 	New trial (rep=3, index=9): OrderedDict([('word', u'red'), ('color', u'green'), ('congruent', 0), ('corrAns', u'down')])
+296.5228 	EXP 	stimuli: autoDraw = False
+296.5228 	EXP 	hint: autoDraw = False
+296.5228 	EXP 	stimuli: color = u'green (named)'
+296.5228 	EXP 	stimuli: text = u'red'
+296.5228 	EXP 	hint: autoDraw = True
+297.0261 	EXP 	stimuli: autoDraw = True
+298.3771 	DATA 	Keypress: down
+298.3795 	EXP 	New trial (rep=3, index=10): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+298.4117 	EXP 	stimuli: autoDraw = False
+298.4117 	EXP 	hint: autoDraw = False
+298.4117 	EXP 	stimuli: color = u'blue (named)'
+298.4117 	EXP 	stimuli: text = u'blue'
+298.4117 	EXP 	hint: autoDraw = True
+298.9101 	EXP 	stimuli: autoDraw = True
+299.4628 	DATA 	Keypress: right
+299.4794 	EXP 	New trial (rep=3, index=11): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+299.5033 	EXP 	stimuli: autoDraw = False
+299.5033 	EXP 	hint: autoDraw = False
+299.5033 	EXP 	stimuli: color = u'red (named)'
+299.5033 	EXP 	stimuli: text = u'red'
+299.5033 	EXP 	hint: autoDraw = True
+300.0105 	EXP 	stimuli: autoDraw = True
+300.5281 	DATA 	Keypress: left
+300.5308 	EXP 	New trial (rep=3, index=12): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+300.5581 	EXP 	stimuli: autoDraw = False
+300.5581 	EXP 	hint: autoDraw = False
+300.5581 	EXP 	stimuli: color = u'blue (named)'
+300.5581 	EXP 	stimuli: text = u'blue'
+300.5581 	EXP 	hint: autoDraw = True
+301.0611 	EXP 	stimuli: autoDraw = True
+301.6616 	DATA 	Keypress: right
+301.6630 	EXP 	New trial (rep=3, index=13): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+301.6868 	EXP 	stimuli: autoDraw = False
+301.6868 	EXP 	hint: autoDraw = False
+301.6868 	EXP 	stimuli: color = u'green (named)'
+301.6868 	EXP 	stimuli: text = u'green'
+301.6868 	EXP 	hint: autoDraw = True
+302.1944 	EXP 	stimuli: autoDraw = True
+302.7118 	DATA 	Keypress: down
+302.7142 	EXP 	New trial (rep=3, index=14): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+302.7279 	EXP 	stimuli: autoDraw = False
+302.7279 	EXP 	hint: autoDraw = False
+302.7279 	EXP 	stimuli: color = u'green (named)'
+302.7279 	EXP 	stimuli: text = u'green'
+302.7279 	EXP 	hint: autoDraw = True
+303.2448 	EXP 	stimuli: autoDraw = True
+303.6622 	DATA 	Keypress: down
+303.6808 	EXP 	New trial (rep=3, index=15): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+303.7080 	EXP 	stimuli: autoDraw = False
+303.7080 	EXP 	hint: autoDraw = False
+303.7080 	EXP 	stimuli: color = u'blue (named)'
+303.7080 	EXP 	stimuli: text = u'blue'
+303.7080 	EXP 	hint: autoDraw = True
+304.2146 	EXP 	stimuli: autoDraw = True
+304.7458 	DATA 	Keypress: right
+304.7482 	EXP 	New trial (rep=3, index=16): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+304.7618 	EXP 	stimuli: autoDraw = False
+304.7618 	EXP 	hint: autoDraw = False
+304.7618 	EXP 	stimuli: color = u'blue (named)'
+304.7618 	EXP 	stimuli: text = u'blue'
+304.7618 	EXP 	hint: autoDraw = True
+305.2787 	EXP 	stimuli: autoDraw = True
+305.7462 	DATA 	Keypress: down
+305.7486 	EXP 	New trial (rep=3, index=17): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+305.7724 	EXP 	stimuli: autoDraw = False
+305.7724 	EXP 	hint: autoDraw = False
+305.7724 	EXP 	stimuli: color = u'red (named)'
+305.7724 	EXP 	stimuli: text = u'red'
+305.7724 	EXP 	hint: autoDraw = True
+306.2791 	EXP 	stimuli: autoDraw = True
+306.7800 	DATA 	Keypress: down
+306.7828 	EXP 	New trial (rep=3, index=18): OrderedDict([('word', u'green'), ('color', u'blue'), ('congruent', 0), ('corrAns', u'right')])
+306.8174 	EXP 	stimuli: autoDraw = False
+306.8174 	EXP 	hint: autoDraw = False
+306.8174 	EXP 	stimuli: color = u'blue (named)'
+306.8174 	EXP 	stimuli: text = u'green'
+306.8174 	EXP 	hint: autoDraw = True
+307.3128 	EXP 	stimuli: autoDraw = True
+307.9827 	DATA 	Keypress: right
+307.9994 	EXP 	New trial (rep=3, index=19): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+308.0130 	EXP 	stimuli: autoDraw = False
+308.0130 	EXP 	hint: autoDraw = False
+308.0130 	EXP 	stimuli: color = u'green (named)'
+308.0130 	EXP 	stimuli: text = u'green'
+308.0130 	EXP 	hint: autoDraw = True
+308.5299 	EXP 	stimuli: autoDraw = True
+309.2308 	DATA 	Keypress: down
+309.2335 	EXP 	New trial (rep=3, index=20): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+309.2606 	EXP 	stimuli: autoDraw = False
+309.2606 	EXP 	hint: autoDraw = False
+309.2606 	EXP 	stimuli: color = u'blue (named)'
+309.2606 	EXP 	stimuli: text = u'blue'
+309.2606 	EXP 	hint: autoDraw = True
+309.7636 	EXP 	stimuli: autoDraw = True
+310.3642 	DATA 	Keypress: right
+310.3658 	EXP 	New trial (rep=3, index=21): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+310.3863 	EXP 	stimuli: autoDraw = False
+310.3863 	EXP 	hint: autoDraw = False
+310.3863 	EXP 	stimuli: color = u'red (named)'
+310.3863 	EXP 	stimuli: text = u'red'
+310.3863 	EXP 	hint: autoDraw = True
+310.8975 	EXP 	stimuli: autoDraw = True
+311.2982 	DATA 	Keypress: left
+311.3003 	EXP 	New trial (rep=3, index=22): OrderedDict([('word', u'green'), ('color', u'red'), ('congruent', 0), ('corrAns', u'left')])
+311.3355 	EXP 	stimuli: autoDraw = False
+311.3355 	EXP 	hint: autoDraw = False
+311.3355 	EXP 	stimuli: color = u'red (named)'
+311.3355 	EXP 	stimuli: text = u'green'
+311.3355 	EXP 	hint: autoDraw = True
+311.8311 	EXP 	stimuli: autoDraw = True
+312.9674 	DATA 	Keypress: left
+312.9839 	EXP 	New trial (rep=3, index=23): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+313.0075 	EXP 	stimuli: autoDraw = False
+313.0075 	EXP 	hint: autoDraw = False
+313.0075 	EXP 	stimuli: color = u'blue (named)'
+313.0075 	EXP 	stimuli: text = u'blue'
+313.0075 	EXP 	hint: autoDraw = True
+313.5148 	EXP 	stimuli: autoDraw = True
+313.9820 	DATA 	Keypress: right
+313.9834 	EXP 	New trial (rep=3, index=24): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+313.9982 	EXP 	stimuli: autoDraw = False
+313.9982 	EXP 	hint: autoDraw = False
+313.9982 	EXP 	stimuli: color = u'blue (named)'
+313.9982 	EXP 	stimuli: text = u'blue'
+313.9982 	EXP 	hint: autoDraw = True
+314.5150 	EXP 	stimuli: autoDraw = True
+314.9992 	DATA 	Keypress: right
+315.0020 	EXP 	New trial (rep=3, index=25): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+315.0151 	EXP 	stimuli: autoDraw = False
+315.0151 	EXP 	hint: autoDraw = False
+315.0151 	EXP 	stimuli: color = u'blue (named)'
+315.0151 	EXP 	stimuli: text = u'blue'
+315.0151 	EXP 	hint: autoDraw = True
+315.5320 	EXP 	stimuli: autoDraw = True
+315.8829 	DATA 	Keypress: right
+315.8856 	EXP 	New trial (rep=3, index=26): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+315.9167 	EXP 	stimuli: autoDraw = False
+315.9167 	EXP 	hint: autoDraw = False
+315.9167 	EXP 	stimuli: color = u'green (named)'
+315.9167 	EXP 	stimuli: text = u'green'
+315.9167 	EXP 	hint: autoDraw = True
+316.4157 	EXP 	stimuli: autoDraw = True
+316.9341 	DATA 	Keypress: down
+316.9508 	EXP 	New trial (rep=3, index=27): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+316.9660 	EXP 	stimuli: autoDraw = False
+316.9660 	EXP 	hint: autoDraw = False
+316.9660 	EXP 	stimuli: color = u'green (named)'
+316.9660 	EXP 	stimuli: text = u'green'
+316.9660 	EXP 	hint: autoDraw = True
+317.4829 	EXP 	stimuli: autoDraw = True
+317.9168 	DATA 	Keypress: down
+317.9185 	EXP 	New trial (rep=3, index=28): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+317.9375 	EXP 	stimuli: autoDraw = False
+317.9375 	EXP 	hint: autoDraw = False
+317.9375 	EXP 	stimuli: color = u'red (named)'
+317.9375 	EXP 	stimuli: text = u'red'
+317.9375 	EXP 	hint: autoDraw = True
+318.4494 	EXP 	stimuli: autoDraw = True
+319.0835 	DATA 	Keypress: left
+319.0858 	EXP 	New trial (rep=3, index=29): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+319.0996 	EXP 	stimuli: autoDraw = False
+319.0996 	EXP 	hint: autoDraw = False
+319.0996 	EXP 	stimuli: color = u'red (named)'
+319.0996 	EXP 	stimuli: text = u'red'
+319.0996 	EXP 	hint: autoDraw = True
+319.6165 	EXP 	stimuli: autoDraw = True
+320.0338 	DATA 	Keypress: left
+320.0362 	EXP 	New trial (rep=3, index=30): OrderedDict([('word', u'green'), ('color', u'blue'), ('congruent', 0), ('corrAns', u'right')])
+320.0636 	EXP 	stimuli: autoDraw = False
+320.0636 	EXP 	hint: autoDraw = False
+320.0636 	EXP 	stimuli: color = u'blue (named)'
+320.0636 	EXP 	stimuli: text = u'green'
+320.0636 	EXP 	hint: autoDraw = True
+320.5668 	EXP 	stimuli: autoDraw = True
+321.1177 	DATA 	Keypress: right
+321.1213 	EXP 	New trial (rep=3, index=31): OrderedDict([('word', u'blue'), ('color', u'red'), ('congruent', 0), ('corrAns', u'left')])
+321.1561 	EXP 	stimuli: autoDraw = False
+321.1561 	EXP 	hint: autoDraw = False
+321.1561 	EXP 	stimuli: color = u'red (named)'
+321.1561 	EXP 	stimuli: text = u'blue'
+321.1561 	EXP 	hint: autoDraw = True
+321.6504 	EXP 	stimuli: autoDraw = True
+322.3345 	DATA 	Keypress: left
+322.3369 	EXP 	New trial (rep=3, index=32): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+322.3662 	EXP 	stimuli: autoDraw = False
+322.3662 	EXP 	hint: autoDraw = False
+322.3662 	EXP 	stimuli: color = u'red (named)'
+322.3662 	EXP 	stimuli: text = u'red'
+322.3662 	EXP 	hint: autoDraw = True
+322.8674 	EXP 	stimuli: autoDraw = True
+323.4182 	DATA 	Keypress: down
+323.4206 	EXP 	New trial (rep=3, index=33): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+323.4482 	EXP 	stimuli: autoDraw = False
+323.4482 	EXP 	hint: autoDraw = False
+323.4482 	EXP 	stimuli: color = u'green (named)'
+323.4482 	EXP 	stimuli: text = u'green'
+323.4482 	EXP 	hint: autoDraw = True
+323.9513 	EXP 	stimuli: autoDraw = True
+324.5856 	DATA 	Keypress: left
+324.5883 	EXP 	New trial (rep=3, index=34): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+324.6175 	EXP 	stimuli: autoDraw = False
+324.6175 	EXP 	hint: autoDraw = False
+324.6175 	EXP 	stimuli: color = u'blue (named)'
+324.6175 	EXP 	stimuli: text = u'blue'
+324.6175 	EXP 	hint: autoDraw = True
+325.1198 	EXP 	stimuli: autoDraw = True
+326.2705 	DATA 	Keypress: right
+326.2872 	EXP 	New trial (rep=3, index=35): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+326.3080 	EXP 	stimuli: autoDraw = False
+326.3080 	EXP 	hint: autoDraw = False
+326.3080 	EXP 	stimuli: color = u'red (named)'
+326.3080 	EXP 	stimuli: text = u'red'
+326.3080 	EXP 	hint: autoDraw = True
+326.8186 	EXP 	stimuli: autoDraw = True
+327.6528 	DATA 	Keypress: left
+327.6552 	EXP 	New trial (rep=3, index=36): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+327.6689 	EXP 	stimuli: autoDraw = False
+327.6689 	EXP 	hint: autoDraw = False
+327.6689 	EXP 	stimuli: color = u'red (named)'
+327.6689 	EXP 	stimuli: text = u'red'
+327.6689 	EXP 	hint: autoDraw = True
+328.1858 	EXP 	stimuli: autoDraw = True
+328.7199 	DATA 	Keypress: left
+328.7223 	EXP 	New trial (rep=3, index=37): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+328.7498 	EXP 	stimuli: autoDraw = False
+328.7498 	EXP 	hint: autoDraw = False
+328.7498 	EXP 	stimuli: color = u'blue (named)'
+328.7498 	EXP 	stimuli: text = u'blue'
+328.7498 	EXP 	hint: autoDraw = True
+329.2528 	EXP 	stimuli: autoDraw = True
+329.7704 	DATA 	Keypress: down
+329.7728 	EXP 	New trial (rep=3, index=38): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+329.8026 	EXP 	stimuli: autoDraw = False
+329.8026 	EXP 	hint: autoDraw = False
+329.8026 	EXP 	stimuli: color = u'green (named)'
+329.8026 	EXP 	stimuli: text = u'green'
+329.8026 	EXP 	hint: autoDraw = True
+330.3032 	EXP 	stimuli: autoDraw = True
+330.7541 	DATA 	Keypress: left
+330.7571 	EXP 	New trial (rep=3, index=39): OrderedDict([('word', u'red'), ('color', u'green'), ('congruent', 0), ('corrAns', u'down')])
+330.7893 	EXP 	stimuli: autoDraw = False
+330.7893 	EXP 	hint: autoDraw = False
+330.7893 	EXP 	stimuli: color = u'green (named)'
+330.7893 	EXP 	stimuli: text = u'red'
+330.7893 	EXP 	hint: autoDraw = True
+331.2869 	EXP 	stimuli: autoDraw = True
+331.8234 	DATA 	Keypress: down
+331.8400 	EXP 	New trial (rep=3, index=40): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+331.8751 	EXP 	stimuli: autoDraw = False
+331.8751 	EXP 	hint: autoDraw = False
+331.8751 	EXP 	stimuli: color = u'green (named)'
+331.8751 	EXP 	stimuli: text = u'green'
+331.8751 	EXP 	hint: autoDraw = True
+332.3703 	EXP 	stimuli: autoDraw = True
+332.6710 	DATA 	Keypress: down
+332.6721 	EXP 	New trial (rep=3, index=41): OrderedDict([('word', u'blue'), ('color', u'blue'), ('congruent', 1), ('corrAns', u'right')])
+332.6913 	EXP 	stimuli: autoDraw = False
+332.6913 	EXP 	hint: autoDraw = False
+332.6913 	EXP 	stimuli: color = u'blue (named)'
+332.6913 	EXP 	stimuli: text = u'blue'
+332.6913 	EXP 	hint: autoDraw = True
+333.2044 	EXP 	stimuli: autoDraw = True
+333.7718 	DATA 	Keypress: right
+333.7739 	EXP 	New trial (rep=3, index=42): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+333.7968 	EXP 	stimuli: autoDraw = False
+333.7968 	EXP 	hint: autoDraw = False
+333.7968 	EXP 	stimuli: color = u'red (named)'
+333.7968 	EXP 	stimuli: text = u'red'
+333.7968 	EXP 	hint: autoDraw = True
+334.3045 	EXP 	stimuli: autoDraw = True
+334.9054 	DATA 	Keypress: left
+334.9081 	EXP 	New trial (rep=3, index=43): OrderedDict([('word', u'red'), ('color', u'red'), ('congruent', 1), ('corrAns', u'left')])
+334.9212 	EXP 	stimuli: autoDraw = False
+334.9212 	EXP 	hint: autoDraw = False
+334.9212 	EXP 	stimuli: color = u'red (named)'
+334.9212 	EXP 	stimuli: text = u'red'
+334.9212 	EXP 	hint: autoDraw = True
+335.4381 	EXP 	stimuli: autoDraw = True
+335.9725 	DATA 	Keypress: left
+335.9758 	EXP 	New trial (rep=3, index=44): OrderedDict([('word', u'green'), ('color', u'green'), ('congruent', 1), ('corrAns', u'down')])
+336.0132 	EXP 	stimuli: autoDraw = False
+336.0132 	EXP 	hint: autoDraw = False
+336.0132 	EXP 	stimuli: color = u'green (named)'
+336.0132 	EXP 	stimuli: text = u'green'
+336.0132 	EXP 	hint: autoDraw = True
+336.5050 	EXP 	stimuli: autoDraw = True
+337.4060 	DATA 	Keypress: down
+337.5588 	EXP 	stimuli: autoDraw = False
+337.5588 	EXP 	hint: autoDraw = False
+337.5588 	EXP 	text_2: autoDraw = True
+338.7746 	DATA 	Keypress: space
+339.4131 	EXP 	window1: mouseVisible = True
